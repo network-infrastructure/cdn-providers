@@ -1,0 +1,33 @@
+name: Report CDN Tariff or Free Tier Change
+description: Submit an official pricing update, PoP count milestone, or free plan restriction change.
+title: "[Tariff Update] <CDN Provider Name>"
+labels: ["pricing-update", "good first issue"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: CDN Provider Name
+      placeholder: e.g., Bunny.net, Gcore CDN, Amazon CloudFront
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official Pricing Page URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What Changed?
+      description: Share the updated $/GB regional rate, free TB quota, request fees, or ToS restriction.
+    validations:
+      required: true
+  - type: input
+    id: verified_date
+    attributes:
+      label: Verification Date (YYYY-MM-DD)
+      placeholder: 2026-11-15
+    validations:
+      required: true

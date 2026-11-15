@@ -207,11 +207,16 @@ python3 cdn_calculator.py --volume-tb 100 --json
 
 ## 📚 Deep-Dive CDN Guides & Interactive Web Calculator
 
-- 🌐 [**Interactive Web CDN Cost Calculator (GitHub Pages)**](https://network-infrastructure.github.io/cdn-providers/) — Calculate 1 TB–500 TB monthly bills live in your browser.
-- 🆓 [**Free CDN Providers & Hidden Restrictions Guide**](guides/free-cdn-providers-and-limits.md) — Detailed breakdown of Cloudflare ToS, AWS 1 TB caps, and Netlify overage traps.
-- 💰 [**CDN Bandwidth Cost Comparison: 1 TB vs 10 TB vs 100 TB**](guides/cdn-bandwidth-cost-calculator-1tb-to-500tb.md) — Real-world FinOps math for SaaS, gaming, and downloads.
-- 🎬 [**Best Video Streaming & Image Optimization CDNs**](guides/video-and-image-cdn-comparison.md) — Bunny Stream vs Cloudflare Stream vs Mux vs ImageKit vs Cloudinary.
-- 🪦 [**Legacy CDN Migration Guide (MaxCDN, StackPath, Edgio)**](guides/legacy-cdn-migration-guide-maxcdn-edgio-stackpath.md) — Step-by-step migration checklist.
+- 🌐 [**Interactive Web CDN Cost Calculator (46 Providers)**](https://network-infrastructure.github.io/cdn-providers/) — Calculate 1 TB–500 TB monthly bills live in your browser with CSV export.
+- ⚔️ [**Cloudflare vs Bunny.net (2026 Comparison)**](guides/cloudflare-vs-bunny-cdn.md) ([Web](https://network-infrastructure.github.io/cdn-providers/cloudflare-vs-bunny-cdn.html)) — Video ToS, R2 vs Bunny Storage & hybrid stack.
+- ⚔️ [**AWS CloudFront vs Cloudflare vs Fastly**](https://network-infrastructure.github.io/cdn-providers/cloudfront-vs-cloudflare-vs-fastly.html) — 1 TB–100 TB costs, request fees & 150ms purge speed.
+- 🆓 [**Free CDN Providers & Hidden Restrictions Guide**](guides/free-cdn-providers-and-limits.md) ([Web](https://network-infrastructure.github.io/cdn-providers/free-cdn-providers.html)) — Cloudflare ToS, AWS 1 TB caps & Netlify overage traps.
+- 💰 [**CDN Bandwidth Cost Comparison: 1 TB vs 10 TB vs 100 TB**](guides/cdn-bandwidth-cost-calculator-1tb-to-500tb.md) ([Web](https://network-infrastructure.github.io/cdn-providers/cdn-pricing-calculator.html)) — Real-world FinOps math.
+- 🗄️ [**Zero-Egress S3 Storage + CDN Stacks**](https://network-infrastructure.github.io/cdn-providers/zero-egress-s3-cdn.html) — Cloudflare R2, Backblaze B2, Hetzner S3 & Oracle OCI.
+- 🎬 [**Best Video Streaming & Image Optimization CDNs**](guides/video-and-image-cdn-comparison.md) ([Web](https://network-infrastructure.github.io/cdn-providers/video-image-cdn.html)) — Bunny Stream, Cloudflare Stream, Mux & ImageKit.
+- 📦 [**Free Open-Source JS, CSS & npm CDNs**](https://network-infrastructure.github.io/cdn-providers/open-source-js-npm-cdn.html) — jsDelivr vs cdnjs vs UNPKG vs esm.sh.
+- 🌏 [**China & APAC CDN Providers**](https://network-infrastructure.github.io/cdn-providers/china-and-apac-cdn-providers.html) — Alibaba Cloud, Tencent EdgeOne & Near-China PoPs.
+- 🪦 [**Legacy CDN Migration Guide (MaxCDN, StackPath, Edgio)**](guides/legacy-cdn-migration-guide-maxcdn-edgio-stackpath.md) ([Web](https://network-infrastructure.github.io/cdn-providers/legacy-cdn-alternatives.html)) — Step-by-step migration checklist.
 
 ---
 
