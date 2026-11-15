@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legacy CDN Migration Guide: MaxCDN, StackPath, Edgio &amp; Incapsula Alternatives (2026)</title>
+  <meta name="description" content="Updated 2026 status and migration alternatives for shut-down CDNs: MaxCDN, StackPath, Highwinds, EdgeCast, Limelight, Edgio, BootstrapCDN &amp; RawGit." />
+  <link rel="canonical" href="https://ktif77.github.io/cdn-providers/legacy-cdn-alternatives.html" />
+  <style>
+    :root { --bg:#080d1a; --surface:#111c33; --surface-alt:#182644; --border:#263554; --text:#f8fafc; --muted:#94a3b8; --blue:#38bdf8; --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.65;overflow-x:clip}
+    .container{max-width:1080px;margin:0 auto;padding:26px 20px 72px}
+    nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:32px;flex-wrap:wrap;gap:12px}
+    .brand{font-weight:700;color:var(--text);text-decoration:none}
+    .nav-links{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
+    .nav-links a{color:var(--muted);text-decoration:none} .nav-links a:hover{color:var(--text)}
+    h1{font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0 0 14px}
+    .lead{color:var(--muted);font-size:17px;margin:0 0 28px;max-width:74ch}
+    .table-wrap{width:100%;overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:32px}
+    table{width:100%;min-width:720px;border-collapse:collapse;font-size:14px}
+    th,td{padding:12px 14px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+    th{background:var(--surface-alt);color:var(--muted);font-size:12px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    td a{color:var(--blue);text-decoration:none;font-weight:600}
+    footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a class="brand" href="./">cdn-providers (2026)</a>
+      <div class="nav-links">
+        <a href="./">Live Calculator</a>
+        <a href="./free-cdn-providers.html">Free CDN Plans</a>
+        <a href="./cdn-pricing-calculator.html">1 TB–500 TB Matrix</a>
+        <a href="./video-image-cdn.html">Video &amp; Image CDNs</a>
+        <a href="https://github.com/ktif77/cdn-providers">GitHub Repo ⭐</a>
+      </div>
+    </nav>
+
+    <h1>Legacy CDN Graveyard &amp; 2026 Migration Guide</h1>
+    <p class="lead">Outdated GitHub CDN lists still link to defunct networks. Here is what happened and where to migrate in 2026 (Verified <strong>2026-11-15</strong>).</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Legacy CDN</th><th>2026 Status</th><th>What Happened</th><th>Recommended Replacement</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>MaxCDN / NetDNA</strong></td><td>Shut Down</td><td>Acquired by StackPath; CDN terminated Nov 2023 &amp; liquidated June 2024</td><td><a href="https://bunny.net/pricing/" target="_blank" rel="noopener">Bunny.net</a> or <a href="https://www.keycdn.com/pricing" target="_blank" rel="noopener">KeyCDN</a></td></tr>
+          <tr><td><strong>StackPath &amp; Highwinds</strong></td><td>Shut Down</td><td>Liquidated June 2024 after shutting down all edge PoPs</td><td><a href="https://bunny.net/pricing/" target="_blank" rel="noopener">Bunny.net</a>, <a href="https://gcore.com/pricing/cdn" target="_blank" rel="noopener">Gcore</a>, or <a href="https://www.cdn77.com/pricing" target="_blank" rel="noopener">CDN77</a></td></tr>
+          <tr><td><strong>EdgeCast / Limelight / Edgio</strong></td><td>Shut Down (Jan 2025)</td><td>Edgio filed Chapter 11 in Sept 2024; network decommissioned Jan 2025</td><td><a href="https://www.akamai.com/pricing" target="_blank" rel="noopener">Akamai</a>, <a href="https://www.fastly.com/pricing/" target="_blank" rel="noopener">Fastly</a>, or <a href="https://www.cdn77.com/pricing" target="_blank" rel="noopener">CDN77</a></td></tr>
+          <tr><td><strong>Azure CDN (Edgio/Verizon)</strong></td><td>Retired</td><td>Microsoft retired Classic Azure CDN and migrated users to Azure Front Door</td><td><a href="https://azure.microsoft.com/en-us/pricing/details/frontdoor/" target="_blank" rel="noopener">Azure Front Door</a> or <a href="https://www.cloudflare.com/plans/" target="_blank" rel="noopener">Cloudflare</a></td></tr>
+          <tr><td><strong>Incapsula (Free Plan)</strong></td><td>Discontinued</td><td>Rebranded to Imperva Enterprise WAAP; free tier removed</td><td><a href="https://www.cloudflare.com/plans/" target="_blank" rel="noopener">Cloudflare Free</a> or <a href="https://gcore.com/pricing/cdn" target="_blank" rel="noopener">Gcore Free</a></td></tr>
+          <tr><td><strong>BootstrapCDN &amp; RawGit</strong></td><td>Merged / Shut Down</td><td>BootstrapCDN merged into jsDelivr; RawGit shut down in 2019</td><td><a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsDelivr</a> or <a href="https://statically.io/" target="_blank" rel="noopener">Statically.io</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer><a href="./" style="color:var(--blue);">← Back to Interactive CDN Calculator</a> • Verified 2026-11-15</footer>
+  </div>
+</body>
+</html>

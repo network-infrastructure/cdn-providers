@@ -1,0 +1,7 @@
+docs/* linguist-documentation
+guides/* linguist-documentation
+tests/* linguist-vendored
+assets/* linguist-vendored
+*.html linguist-detectable=false
+*.json linguist-detectable=false
+*.md linguist-documentation

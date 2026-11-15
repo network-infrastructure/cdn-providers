@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CDN Pricing Matrix: 1 TB, 10 TB, 50 TB, 100 TB &amp; 500 TB/mo (2026)</title>
+  <meta name="description" content="Multi-volume CDN bandwidth cost comparison for 1 TB, 10 TB, 50 TB, 100 TB, and 500 TB/month across Bunny.net, Cloudflare R2, CloudFront, Fastly, Gcore &amp; CDN77." />
+  <link rel="canonical" href="https://ktif77.github.io/cdn-providers/cdn-pricing-calculator.html" />
+  <meta property="og:title" content="CDN Pricing Matrix: 1 TB to 500 TB/mo Compared (2026)" />
+  <meta property="og:description" content="Real-world FinOps pricing matrix showing why 100 TB/month costs $90 on Cloudflare R2, $450 on Bunny.net Volume, and $7,515 on CloudFront list pricing." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ktif77.github.io/cdn-providers/cdn-pricing-calculator.html" />
+  <style>
+    :root { --bg:#080d1a; --surface:#111c33; --surface-alt:#182644; --border:#263554; --text:#f8fafc; --muted:#94a3b8; --blue:#38bdf8; --accent:#10b981; --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.65;overflow-x:clip}
+    .container{max-width:1080px;margin:0 auto;padding:26px 20px 72px}
+    nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:32px;flex-wrap:wrap;gap:12px}
+    .brand{font-weight:700;color:var(--text);text-decoration:none}
+    .nav-links{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
+    .nav-links a{color:var(--muted);text-decoration:none} .nav-links a:hover{color:var(--text)}
+    h1{font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0 0 14px}
+    .lead{color:var(--muted);font-size:17px;margin:0 0 28px;max-width:74ch}
+    .table-wrap{width:100%;overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:32px}
+    table{width:100%;min-width:760px;border-collapse:collapse;font-size:14px}
+    th,td{padding:12px 14px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+    th{background:var(--surface-alt);color:var(--muted);font-size:12px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    td a{color:var(--blue);text-decoration:none;font-weight:600}
+    footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a class="brand" href="./">cdn-providers (2026)</a>
+      <div class="nav-links">
+        <a href="./">Live Calculator</a>
+        <a href="./free-cdn-providers.html">Free CDN Plans</a>
+        <a href="./video-image-cdn.html">Video &amp; Image CDNs</a>
+        <a href="./legacy-cdn-alternatives.html">Legacy Migration</a>
+        <a href="https://github.com/ktif77/cdn-providers">GitHub Repo ⭐</a>
+      </div>
+    </nav>
+
+    <h1>CDN Pricing Matrix: 1 TB vs 10 TB vs 50 TB vs 100 TB vs 500 TB (2026)</h1>
+    <p class="lead">Public NA/EU pay-as-you-go monthly estimates verified <strong>2026-11-15</strong> (`1 TB = 1,000 GB`, 25M HTTP requests at 10 TB scaling proportionally).</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>CDN Provider</th><th>1 TB/mo</th><th>10 TB/mo</th><th>50 TB/mo</th><th>100 TB/mo</th><th>500 TB/mo</th><th>Official Tariff</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Cloudflare R2 + CDN</strong></td><td>$0</td><td>$15</td><td>$45</td><td>$90</td><td>$360</td><td><a href="https://developers.cloudflare.com/r2/pricing/" target="_blank" rel="noopener">R2 Pricing →</a></td></tr>
+          <tr><td><strong>Hetzner S3 + Cloudflare</strong></td><td>$5.39</td><td>$14.39</td><td>$54.39</td><td>$104.39</td><td>$504.39</td><td><a href="https://www.hetzner.com/cloud/object-storage/" target="_blank" rel="noopener">Hetzner →</a></td></tr>
+          <tr><td><strong>Bunny.net (Volume)</strong></td><td>$5</td><td>$50</td><td>$250</td><td>$450</td><td>$1,500</td><td><a href="https://bunny.net/pricing/" target="_blank" rel="noopener">Bunny.net →</a></td></tr>
+          <tr><td><strong>BlazingCDN</strong></td><td>$5</td><td>$50</td><td>$225</td><td>$400</td><td>$1,500</td><td><a href="https://blazingcdn.com/pricing/" target="_blank" rel="noopener">BlazingCDN →</a></td></tr>
+          <tr><td><strong>Bunny.net (Standard)</strong></td><td>$10</td><td>$100</td><td>$500</td><td>$1,000</td><td>$5,000</td><td><a href="https://bunny.net/pricing/" target="_blank" rel="noopener">Bunny.net →</a></td></tr>
+          <tr><td><strong>DigitalOcean Spaces</strong></td><td>$5</td><td>$95</td><td>$495</td><td>$995</td><td>$4,995</td><td><a href="https://www.digitalocean.com/pricing/spaces-object-storage" target="_blank" rel="noopener">DO Spaces →</a></td></tr>
+          <tr><td><strong>Oracle Cloud (OCI)</strong></td><td>$0</td><td>$0</td><td>$340</td><td>$765</td><td>$4,165</td><td><a href="https://www.oracle.com/cloud/networking/pricing/" target="_blank" rel="noopener">OCI →</a></td></tr>
+          <tr><td><strong>Gcore CDN</strong></td><td>$0</td><td>$180</td><td>$450</td><td>$750</td><td>$2,000</td><td><a href="https://gcore.com/pricing/cdn" target="_blank" rel="noopener">Gcore →</a></td></tr>
+          <tr><td><strong>CDN77</strong></td><td>$199</td><td>$199</td><td>$650</td><td>$990</td><td>$2,250</td><td><a href="https://www.cdn77.com/pricing" target="_blank" rel="noopener">CDN77 →</a></td></tr>
+          <tr><td><strong>KeyCDN</strong></td><td>$40</td><td>$400</td><td>$1,600</td><td>$2,600</td><td>$6,600</td><td><a href="https://www.keycdn.com/pricing" target="_blank" rel="noopener">KeyCDN →</a></td></tr>
+          <tr><td><strong>Amazon CloudFront</strong></td><td>$0</td><td>$775</td><td>$4,015</td><td>$7,515</td><td>$26,500</td><td><a href="https://aws.amazon.com/cloudfront/pricing/" target="_blank" rel="noopener">CloudFront →</a></td></tr>
+          <tr><td><strong>Google Cloud CDN</strong></td><td>$85</td><td>$810</td><td>$2,950</td><td>$5,450</td><td>$16,500</td><td><a href="https://cloud.google.com/cdn/pricing" target="_blank" rel="noopener">GCP CDN →</a></td></tr>
+          <tr><td><strong>Fastly CDN</strong></td><td>$75</td><td>$1,150</td><td>$4,600</td><td>$8,200</td><td>$29,000</td><td><a href="https://www.fastly.com/pricing/" target="_blank" rel="noopener">Fastly →</a></td></tr>
+          <tr><td><strong>Vercel Edge</strong></td><td>$20</td><td>$1,370</td><td>$7,370</td><td>$14,870</td><td>$74,870</td><td><a href="https://vercel.com/pricing" target="_blank" rel="noopener">Vercel →</a></td></tr>
+          <tr><td><strong>Netlify Edge</strong></td><td>$19</td><td>$4,969</td><td>$26,969</td><td>$54,469</td><td>$274,469</td><td><a href="https://www.netlify.com/pricing/" target="_blank" rel="noopener">Netlify →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer><a href="./" style="color:var(--blue);">← Back to Interactive CDN Calculator</a> • Verified 2026-11-15</footer>
+  </div>
+</body>
+</html>

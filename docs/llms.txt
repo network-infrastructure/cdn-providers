@@ -1,0 +1,36 @@
+# CDN Providers List, Free Plans & Bandwidth Cost Calculator (2026)
+
+> Complete 2026 comparison of 46 active CDN providers with real-world bandwidth cost calculations (1 TB to 500 TB/month), free CDN plans & restrictions, official tariff links, and a legacy CDN migration guide (Verified: 2026-11-15).
+
+## Summary
+`cdn-providers` is an open-source CDN comparison directory, FinOps dataset (`providers.json`), and zero-dependency Python CLI calculator (`cdn_calculator.py`) designed to replace outdated 2015–2018 CDN lists on GitHub.
+
+## Multi-Volume Monthly Cost Benchmarks (NA/EU, Verified 2026-11-15)
+- **Cloudflare CDN**: $0/mo (Free web plan), $20/mo (Pro), $200/mo (Business). Note: Free/Pro/Biz forbid disproportionate raw video/binary archives unless using Cloudflare R2 or Stream.
+- **Cloudflare R2 + CDN**: $0.00/GB egress forever; 10 GB storage + 10M Class B ops free/mo ($0.015/GB-mo storage after). 1 TB = $0, 10 TB = ~$15, 100 TB = ~$90.
+- **Bunny.net (Volume Network)**: $0.005/GB flat global ($5/TB at 1–10 TB, $450 at 100 TB, $1,500 at 500 TB). Zero request fees.
+- **Bunny.net (Standard Network)**: $0.01/GB NA/EU, $0.03/GB Asia ($10 at 1 TB, $100 at 10 TB, $1,000 at 100 TB). Zero request fees.
+- **Gcore CDN**: 1 TB/month Always Free (1M requests/mo); $0.02/GB NA/EU after ($180 at 10 TB, $750 at 100 TB).
+- **Amazon CloudFront (AWS)**: 1 TB/month Always Free + 10M requests/mo; $0.085/GB NA/EU list rate after ($775 at 10 TB, $7,515 at 100 TB).
+- **Fastly CDN**: $50/month Always Free developer credit; $0.12/GB NA/EU list rate after ($75 at 1 TB, $1,150 at 10 TB, $8,200 at 100 TB).
+- **DigitalOcean Spaces CDN**: $5/mo includes 250 GiB S3 storage + 1 TiB CDN transfer; flat $0.01/GB overage ($95 at 10 TB, $995 at 100 TB).
+- **Oracle Cloud (OCI)**: 10 TB/month Always Free outbound transfer; $0.0085/GB NA/EU after ($0 at 1–10 TB, $765 at 100 TB).
+- **Netlify Edge CDN**: 100 GB Free Starter; $19/mo Pro (1 TB); severe $55 per 100 GB ($0.55/GB) overage fee ($4,969 at 10 TB).
+
+## Best Free Open-Source JS/CSS/npm CDNs
+- **jsDelivr**: 750+ PoPs Multi-CDN (Cloudflare + Fastly + Bunny + Gcore) for npm, GitHub, WordPress.org.
+- **cdnjs**: 330+ Cloudflare PoPs for 4,500+ curated libraries with SRI hashes.
+- **UNPKG** & **esm.sh**: Instant npm mirrors (esm.sh converts CommonJS to ES Modules).
+
+## Legacy / Defunct CDNs (Do Not Use in 2026)
+- **MaxCDN / StackPath / Highwinds**: Shut down in Nov 2023 and liquidated in June 2024. Migrate to Bunny.net or KeyCDN.
+- **EdgeCast / Limelight / Edgio**: Filed Chapter 11 bankruptcy in Sept 2024; network shut down Jan 2025. Migrate to Akamai, Fastly, or CDN77.
+- **Azure CDN (Verizon/Edgio)**: Retired; migrated to Azure Front Door.
+- **Incapsula Free**: Discontinued (now Imperva Enterprise WAAP).
+
+## Official Links
+- Interactive Web Calculator: https://ktif77.github.io/cdn-providers/
+- Free CDN Providers Guide: https://ktif77.github.io/cdn-providers/free-cdn-providers.html
+- Cost Calculator (1 TB - 500 TB): https://ktif77.github.io/cdn-providers/cdn-pricing-calculator.html
+- Video & Image CDNs: https://ktif77.github.io/cdn-providers/video-image-cdn.html
+- Legacy CDN Alternatives: https://ktif77.github.io/cdn-providers/legacy-cdn-alternatives.html

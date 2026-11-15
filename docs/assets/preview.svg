@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1a"/>
+      <stop offset="55%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#152238"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <circle cx="1140" cy="110" r="240" fill="#10b981" opacity="0.06"/>
+  <circle cx="140" cy="540" r="260" fill="#38bdf8" opacity="0.06"/>
+
+  <!-- Top Pill Badge -->
+  <rect x="64" y="42" width="490" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="84" y="64" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5" font-weight="700" letter-spacing="1.1">2026 VERIFIED DIRECTORY • 45+ CDN PROVIDERS BENCHMARKED</text>
+
+  <!-- Main Heading -->
+  <text x="64" y="122" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="42" font-weight="800" letter-spacing="-0.8">CDN Providers Comparison &amp; Pricing Calculator</text>
+  <text x="64" y="158" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="19" font-weight="500">Real-World Bandwidth Cost Matrix (1 TB – 500 TB) • Free CDN Plans &amp; Limits • Official Tariffs (Verified Nov 2026)</text>
+
+  <!-- Comparison Table Card -->
+  <rect x="64" y="186" width="1152" height="376" rx="14" fill="#111c33" stroke="#263554" stroke-width="1.5"/>
+
+  <!-- Table Header -->
+  <rect x="65" y="187" width="1150" height="46" rx="13" fill="#182644"/>
+  <text x="90" y="216" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">CDN PROVIDER</text>
+  <text x="355" y="216" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">FREE PLAN / TRIAL</text>
+  <text x="580" y="216" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">$/GB (NA/EU)</text>
+  <text x="720" y="216" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">1 TB/MO</text>
+  <text x="830" y="216" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">10 TB/MO</text>
+  <text x="950" y="216" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">100 TB/MO</text>
+  <text x="1085" y="216" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">BEST USE CASE</text>
+
+  <!-- Row 1: Cloudflare -->
+  <line x1="65" y1="278" x2="1215" y2="278" stroke="#1e293b" stroke-width="1"/>
+  <text x="90" y="261" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15.5" font-weight="700">Cloudflare CDN + R2</text>
+  <text x="355" y="261" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="600">Unlimited Web / 10GB R2</text>
+  <text x="580" y="261" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0.00 / GB</text>
+  <text x="720" y="261" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0 Free</text>
+  <text x="830" y="261" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0–$15</text>
+  <text x="950" y="261" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="600">$90–$200</text>
+  <text x="1085" y="261" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5">Web, SaaS, Zero-Egress</text>
+
+  <!-- Row 2: Bunny.net Volume & Standard -->
+  <line x1="65" y1="324" x2="1215" y2="324" stroke="#1e293b" stroke-width="1"/>
+  <text x="90" y="307" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15.5" font-weight="700">Bunny.net (Volume / Std)</text>
+  <text x="355" y="307" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14">14-Day Trial (1 TB Free)</text>
+  <text x="580" y="307" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0.005–$0.01</text>
+  <text x="720" y="307" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$5–$10</text>
+  <text x="830" y="307" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$50–$100</text>
+  <text x="950" y="307" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$450–$1,000</text>
+  <text x="1085" y="307" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5">Best Price/Perf &amp; Video</text>
+
+  <!-- Row 3: Gcore CDN -->
+  <line x1="65" y1="370" x2="1215" y2="370" stroke="#1e293b" stroke-width="1"/>
+  <text x="90" y="353" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15.5" font-weight="700">Gcore CDN (180+ PoPs)</text>
+  <text x="355" y="353" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="600">1 TB / mo Always Free</text>
+  <text x="580" y="353" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$0.02 / GB</text>
+  <text x="720" y="353" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0 Free</text>
+  <text x="830" y="353" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$180</text>
+  <text x="950" y="353" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$750</text>
+  <text x="1085" y="353" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5">Gaming &amp; Live Stream</text>
+
+  <!-- Row 4: AWS CloudFront -->
+  <line x1="65" y1="416" x2="1215" y2="416" stroke="#1e293b" stroke-width="1"/>
+  <text x="90" y="399" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15.5" font-weight="700">Amazon CloudFront (AWS)</text>
+  <text x="355" y="399" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="600">1 TB / mo Always Free</text>
+  <text x="580" y="399" fill="#f87171" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$0.085 / GB</text>
+  <text x="720" y="399" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0 Free</text>
+  <text x="830" y="399" fill="#fca5a5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$775</text>
+  <text x="950" y="399" fill="#fca5a5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$7,515</text>
+  <text x="1085" y="399" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5">AWS S3 &lt; 1 TB / Enterprise</text>
+
+  <!-- Row 5: DigitalOcean Spaces CDN -->
+  <line x1="65" y1="462" x2="1215" y2="462" stroke="#1e293b" stroke-width="1"/>
+  <text x="90" y="445" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15.5" font-weight="700">DigitalOcean Spaces CDN</text>
+  <text x="355" y="445" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="600">$200 Free Cloud Credit</text>
+  <text x="580" y="445" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0.01 / GB</text>
+  <text x="720" y="445" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$5 Inc.</text>
+  <text x="830" y="445" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$95</text>
+  <text x="950" y="445" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$995</text>
+  <text x="1085" y="445" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5">S3 Storage + Edge CDN</text>
+
+  <!-- Row 6: Fastly & KeyCDN -->
+  <line x1="65" y1="508" x2="1215" y2="508" stroke="#1e293b" stroke-width="1"/>
+  <text x="90" y="491" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15.5" font-weight="700">Fastly CDN / KeyCDN</text>
+  <text x="355" y="491" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14">$50/mo Dev Credit / 25GB</text>
+  <text x="580" y="491" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$0.04–$0.12</text>
+  <text x="720" y="491" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$40–$75</text>
+  <text x="830" y="491" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$400–$1.1k</text>
+  <text x="950" y="491" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$2.6k–$8.2k</text>
+  <text x="1085" y="491" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5">150ms Purge &amp; Flat Global</text>
+
+  <!-- Row 7: Open-Source JS/NPM CDNs -->
+  <text x="90" y="538" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15.5" font-weight="700">jsDelivr / cdnjs / unpkg</text>
+  <text x="355" y="538" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="700">100% Free Forever (OSS)</text>
+  <text x="580" y="538" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0.00 / GB</text>
+  <text x="720" y="538" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0 Free</text>
+  <text x="830" y="538" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0 Free</text>
+  <text x="950" y="538" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">$0 Free</text>
+  <text x="1085" y="538" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13.5">npm, GitHub &amp; JS Libraries</text>
+
+  <!-- Bottom Footer Strip -->
+  <text x="64" y="604" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">Includes CLI Cost Calculator (`python3 cdn_calculator.py`) • Legacy CDN Migration Guide (MaxCDN, StackPath, Edgio) • MIT License</text>
+</svg>
