@@ -184,7 +184,7 @@ Want to calculate your exact monthly CDN bill for **any bandwidth volume (e.g., 
 
 ```bash
 # Clone the repository
-git clone https://github.com/ktif77/cdn-providers.git
+git clone https://github.com/network-infrastructure/cdn-providers.git
 cd cdn-providers
 
 # 1. Calculate monthly cost for 25 TB/month & 100M requests in North America / Europe
@@ -207,7 +207,7 @@ python3 cdn_calculator.py --volume-tb 100 --json
 
 ## 📚 Deep-Dive CDN Guides & Interactive Web Calculator
 
-- 🌐 [**Interactive Web CDN Cost Calculator (GitHub Pages)**](https://ktif77.github.io/cdn-providers/) — Calculate 1 TB–500 TB monthly bills live in your browser.
+- 🌐 [**Interactive Web CDN Cost Calculator (GitHub Pages)**](https://network-infrastructure.github.io/cdn-providers/) — Calculate 1 TB–500 TB monthly bills live in your browser.
 - 🆓 [**Free CDN Providers & Hidden Restrictions Guide**](guides/free-cdn-providers-and-limits.md) — Detailed breakdown of Cloudflare ToS, AWS 1 TB caps, and Netlify overage traps.
 - 💰 [**CDN Bandwidth Cost Comparison: 1 TB vs 10 TB vs 100 TB**](guides/cdn-bandwidth-cost-calculator-1tb-to-500tb.md) — Real-world FinOps math for SaaS, gaming, and downloads.
 - 🎬 [**Best Video Streaming & Image Optimization CDNs**](guides/video-and-image-cdn-comparison.md) — Bunny Stream vs Cloudflare Stream vs Mux vs ImageKit vs Cloudinary.

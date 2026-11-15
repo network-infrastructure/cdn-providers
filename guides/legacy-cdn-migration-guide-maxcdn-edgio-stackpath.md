@@ -1,6 +1,6 @@
 # Legacy CDN Migration Guide: MaxCDN, StackPath, Edgio (EdgeCast / Limelight) & Incapsula (2026)
 
-> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Migration Map](https://ktif77.github.io/cdn-providers/legacy-cdn-alternatives.html)
+> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Migration Map](https://network-infrastructure.github.io/cdn-providers/legacy-cdn-alternatives.html)
 
 If you found a CDN recommendation from an old 2015–2020 GitHub Gist or blog post, there is a high chance that provider **no longer exists**. Between 2023 and 2025, several of the largest legacy CDNs shut down or filed for bankruptcy.
 

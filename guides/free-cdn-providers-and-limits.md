@@ -1,6 +1,6 @@
 # Free CDN Providers & Hidden Restrictions Compared (2026)
 
-> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Calculator](https://ktif77.github.io/cdn-providers/free-cdn-providers.html)
+> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Calculator](https://network-infrastructure.github.io/cdn-providers/free-cdn-providers.html)
 
 Many developers assume a **"Free CDN"** means unlimited free file hosting. In reality, every major free CDN enforces strict **Terms of Service (ToS)**, **monthly TB caps**, **HTTP request limits**, or **non-commercial clauses**. Exceeding them can result in either **account suspension** or a **surprise $500–$5,000+ overage invoice**.
 

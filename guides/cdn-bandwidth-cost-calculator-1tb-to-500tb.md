@@ -1,6 +1,6 @@
 # CDN Bandwidth Cost Calculator: 1 TB vs 10 TB vs 50 TB vs 100 TB vs 500 TB (2026)
 
-> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Calculator](https://ktif77.github.io/cdn-providers/cdn-pricing-calculator.html)
+> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Calculator](https://network-infrastructure.github.io/cdn-providers/cdn-pricing-calculator.html)
 
 When comparing **CDN providers**, per-GB list prices rarely tell the full story. Minimum monthly fees, free tier allowances, regional multipliers (Asia/LATAM vs North America/Europe), and **per-10,000 HTTP request charges** can swing your monthly bill by **10x to 100x**.
 

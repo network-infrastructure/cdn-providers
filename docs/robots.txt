@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ktif77.github.io/cdn-providers/sitemap.xml
+Sitemap: https://network-infrastructure.github.io/cdn-providers/sitemap.xml

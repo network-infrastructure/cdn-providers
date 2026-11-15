@@ -29,8 +29,8 @@
 - **Incapsula Free**: Discontinued (now Imperva Enterprise WAAP).
 
 ## Official Links
-- Interactive Web Calculator: https://ktif77.github.io/cdn-providers/
-- Free CDN Providers Guide: https://ktif77.github.io/cdn-providers/free-cdn-providers.html
-- Cost Calculator (1 TB - 500 TB): https://ktif77.github.io/cdn-providers/cdn-pricing-calculator.html
-- Video & Image CDNs: https://ktif77.github.io/cdn-providers/video-image-cdn.html
-- Legacy CDN Alternatives: https://ktif77.github.io/cdn-providers/legacy-cdn-alternatives.html
+- Interactive Web Calculator: https://network-infrastructure.github.io/cdn-providers/
+- Free CDN Providers Guide: https://network-infrastructure.github.io/cdn-providers/free-cdn-providers.html
+- Cost Calculator (1 TB - 500 TB): https://network-infrastructure.github.io/cdn-providers/cdn-pricing-calculator.html
+- Video & Image CDNs: https://network-infrastructure.github.io/cdn-providers/video-image-cdn.html
+- Legacy CDN Alternatives: https://network-infrastructure.github.io/cdn-providers/legacy-cdn-alternatives.html

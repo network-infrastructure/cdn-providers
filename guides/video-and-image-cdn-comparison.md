@@ -1,6 +1,6 @@
 # Best Video Streaming & Image Optimization CDNs (2026 Comparison)
 
-> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Calculator](https://ktif77.github.io/cdn-providers/video-image-cdn.html)
+> **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Calculator](https://network-infrastructure.github.io/cdn-providers/video-image-cdn.html)
 
 Video and high-resolution images account for over 80% of web traffic, yet standard web CDNs either **ban raw video** on free plans (Cloudflare Free) or charge **$0.08–$0.55/GB** (AWS/Vercel/Netlify). This guide compares the top **Video Streaming CDNs** and **Real-Time Image CDNs**.
 
