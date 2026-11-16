@@ -21,7 +21,7 @@ Most **CDN providers** lists on GitHub are outdated 2015–2018 link dumps fille
 
 This repository is an actively maintained, **verification-dated (`2026-11-15`) CDN comparison and bandwidth cost calculator** covering **46 active CDN providers** and **12 retired/acquired legacy CDNs**. Every entry includes **per-GB regional rates**, **multi-volume monthly cost calculations (1 TB, 10 TB, 50 TB, 100 TB, 500 TB)**, **free tier quotas and Terms of Service traps**, and **direct links to official pricing pages**.
 
-![CDN Providers Comparison & Pricing Calculator Preview](docs/assets/preview.svg)
+![CDN Providers Comparison & Pricing Calculator Preview](docs/assets/preview.png)
 
 ---
 
