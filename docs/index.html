@@ -279,18 +279,19 @@
       })).sort((a, b) => a.est - b.est || a.name.localeCompare(b.name));
 
       lastRendered = list;
+      const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
       const tbody = document.getElementById("cdnTableBody");
       tbody.innerHTML = list.map(p => {
         const cls = p.est === 0 ? "price-free" : (p.est <= 150 ? "price-low" : (p.est >= 1000 ? "price-high" : "price-mid"));
         const estText = p.est === 0 ? "$0.00 (Free)" : "$" + p.est.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "/mo";
         const rateText = p.rate === 0 ? "$0.00/GB" : "$" + p.rate + "/GB";
         return `<tr>
-          <td><strong>${p.name}</strong></td>
-          <td>${p.free}</td>
-          <td class="measured">${rateText}</td>
-          <td class="${cls}">${estText}</td>
-          <td class="note-cell">${p.note}</td>
-          <td><a href="${p.url}" target="_blank" rel="noopener">Official tariff</a><span class="verified-date">Verified ${p.verified}</span></td>
+          <td><strong>${esc(p.name)}</strong></td>
+          <td>${esc(p.free)}</td>
+          <td class="measured">${esc(rateText)}</td>
+          <td class="${cls}">${esc(estText)}</td>
+          <td class="note-cell">${esc(p.note)}</td>
+          <td><a href="${esc(p.url)}" target="_blank" rel="noopener">Official tariff</a><span class="verified-date">Verified ${esc(p.verified)}</span></td>
         </tr>`;
       }).join("");
     }

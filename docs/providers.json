@@ -415,7 +415,7 @@
     "global": 0.0,
     "req10k": 0.0,
     "min": 0.0,
-    "note": "Designed for ES module `import` statements and import maps rather than legacy `<script>` global tags.",
+    "note": "Designed for ES module import statements and import maps rather than legacy script tags.",
     "url": "https://esm.sh/",
     "verified": "2026-11-15"
   },
@@ -685,7 +685,7 @@
     "global": 0.0,
     "req10k": 0.0,
     "min": 0.0,
-    "note": "Only caches WordPress images (`i0.wp.com`) and core/plugin static assets; cannot purge individual image URLs without renaming the file; VideoPress requires paid plan after 1st video.",
+    "note": "Only caches WordPress images (i0.wp.com) and core/plugin static assets; cannot purge individual image URLs without renaming the file; VideoPress requires paid plan after 1st video.",
     "url": "https://jetpack.com/support/site-accelerator/",
     "verified": "2026-11-15"
   }
