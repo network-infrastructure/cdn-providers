@@ -3,15 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zero-Egress S3 Storage + CDN Stacks (2026) — Cloudflare R2, Backblaze B2 &amp; Hetzner</title>
-  <meta name="description" content="Eliminate AWS S3 and CloudFront egress bills in 2026: compare Cloudflare R2 ($0 egress), Backblaze B2 Bandwidth Alliance, Hetzner S3 (€1/TB), and Oracle OCI (10 TB free)." />
+  <title>Zero-Egress S3 Storage and CDN Stacks (2026)</title>
+  <meta name="description" content="Eliminate AWS S3 and CloudFront egress bills in 2026: compare Cloudflare R2 ($0 egress), Backblaze B2 Bandwidth Alliance, Hetzner S3 (EUR 1/TB), and Oracle OCI (10 TB free)." />
   <link rel="canonical" href="https://network-infrastructure.github.io/cdn-providers/zero-egress-s3-cdn.html" />
-  <meta property="og:title" content="Zero-Egress S3 Storage + CDN Stacks (2026)" />
-  <meta property="og:description" content="How to serve 100 TB/month of files, backups, and video for $6–$90/month instead of $7,500+ on AWS CloudFront." />
+  <meta property="og:title" content="Zero-Egress S3 Storage and CDN Stacks (2026)" />
+  <meta property="og:description" content="How to serve 100 TB/month of files, backups, and video for $6 to $90/month instead of $7,500+ on AWS CloudFront." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://network-infrastructure.github.io/cdn-providers/zero-egress-s3-cdn.html" />
   <meta property="og:image" content="https://network-infrastructure.github.io/cdn-providers/assets/preview.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,56 +32,49 @@
     ]
   }
   </script>
-  <style>
-    :root { --bg:#080d1a; --surface:#111c33; --surface-alt:#182644; --border:#263554; --text:#f8fafc; --muted:#94a3b8; --blue:#38bdf8; --accent:#10b981; --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif; }
-    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.65;overflow-x:clip}
-    .container{max-width:1080px;margin:0 auto;padding:26px 20px 72px}
-    nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:32px;flex-wrap:wrap;gap:12px}
-    .brand{font-weight:700;color:var(--text);text-decoration:none}
-    .nav-links{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
-    .nav-links a{color:var(--muted);text-decoration:none} .nav-links a:hover{color:var(--text)}
-    h1{font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0 0 14px}
-    .lead{color:var(--muted);font-size:17px;margin:0 0 28px;max-width:74ch}
-    .table-wrap{width:100%;overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:32px}
-    table{width:100%;min-width:720px;border-collapse:collapse;font-size:14px}
-    th,td{padding:12px 14px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
-    th{background:var(--surface-alt);color:var(--muted);font-size:12px;text-transform:uppercase}
-    tr:last-child td{border-bottom:none}
-    td a{color:var(--blue);text-decoration:none;font-weight:600}
-    footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
-  </style>
 </head>
 <body>
   <div class="container">
-    <nav>
-      <a class="brand" href="./">cdn-providers (2026)</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">cdn-providers</a>
       <div class="nav-links">
-        <a href="./">Live Calculator</a>
-        <a href="./cdn-pricing-calculator.html">1 TB–500 TB Matrix</a>
+        <a href="./">Live calculator</a>
+        <a href="./cdn-pricing-calculator.html">1 TB to 500 TB matrix</a>
         <a href="./cloudflare-vs-bunny-cdn.html">Cloudflare vs Bunny</a>
-        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub Repo ⭐</a>
+        <a href="./zero-egress-s3-cdn.html" aria-current="page">Zero-egress S3</a>
+        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub repository</a>
       </div>
     </nav>
 
-    <h1>Zero-Egress S3 Object Storage + CDN Stacks (2026)</h1>
-    <p class="lead">Stop paying $0.085–$0.09/GB for AWS S3/CloudFront egress. Compare verified zero-egress and $1/TB S3 + CDN architectures (Verified <strong>2026-11-15</strong>).</p>
+    <header class="hero">
+      <h1>Zero-Egress S3 and CDN Stacks</h1>
+      <p class="hero-sub">Stop paying $0.085 to $0.09/GB for AWS S3 and CloudFront egress. Compare verified zero-egress and $1/TB S3 + CDN stacks.</p>
+      <div class="hero-meta">
+        <span>Verified: <time class="measured reading-amber" datetime="2026-11-15">2026-11-15</time></span>
+      </div>
+    </header>
 
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Stack</th><th>Free Allowance</th><th>Storage Cost</th><th>Egress Cost</th><th>100 TB/mo Est.</th><th>Official Pricing</th></tr>
+          <tr><th>Stack</th><th>Free allowance</th><th>Storage cost</th><th>Egress cost</th><th>100 TB/mo est.</th><th>Official pricing</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Cloudflare R2 + CDN</strong></td><td>10 GB storage + ∞ Egress</td><td>$0.015/GB-mo</td><td><strong>$0.00/GB Forever</strong></td><td>~$90/mo</td><td><a href="https://developers.cloudflare.com/r2/pricing/" target="_blank" rel="noopener">R2 Pricing →</a></td></tr>
-          <tr><td><strong>Backblaze B2 + Cloudflare</strong></td><td>10 GB storage + 3x egress</td><td>$6/TB-mo</td><td><strong>$0.00/GB</strong> (Bandwidth Alliance)</td><td>~$6/mo (1 TB stored)</td><td><a href="https://www.backblaze.com/cloud-storage/pricing" target="_blank" rel="noopener">Backblaze B2 →</a></td></tr>
-          <tr><td><strong>Hetzner S3 + Cloudflare</strong></td><td>1 TB incl. in €4.99/mo</td><td>€4.99/TB-mo</td><td><strong>€1.00/TB ($0.001/GB)</strong></td><td>~$104/mo</td><td><a href="https://www.hetzner.com/cloud/object-storage/" target="_blank" rel="noopener">Hetzner S3 →</a></td></tr>
-          <tr><td><strong>Oracle Cloud (OCI)</strong></td><td>10 TB/mo Always Free</td><td>$0.0255/GB-mo</td><td>$0.0085/GB after 10 TB</td><td>~$765/mo</td><td><a href="https://www.oracle.com/cloud/networking/pricing/" target="_blank" rel="noopener">OCI Networking →</a></td></tr>
-          <tr><td><strong>DigitalOcean Spaces</strong></td><td>$200 credit + 1 TB in $5/mo</td><td>250 GiB incl.</td><td>$0.01/GB flat global</td><td>$995/mo</td><td><a href="https://www.digitalocean.com/pricing/spaces-object-storage" target="_blank" rel="noopener">DO Spaces →</a></td></tr>
+          <tr><td><strong>Cloudflare R2 + CDN</strong></td><td>10 GB storage + unlimited egress</td><td class="measured">$0.015/GB-mo</td><td class="price-free">$0.00/GB forever</td><td class="price-low">~$90/mo</td><td><a href="https://developers.cloudflare.com/r2/pricing/" target="_blank" rel="noopener">R2 pricing</a></td></tr>
+          <tr><td><strong>Backblaze B2 + Cloudflare</strong></td><td>10 GB storage + 3x egress</td><td class="measured">$6/TB-mo</td><td class="price-free">$0.00/GB (Bandwidth Alliance)</td><td class="price-low">~$6/mo (1 TB stored)</td><td><a href="https://www.backblaze.com/cloud-storage/pricing" target="_blank" rel="noopener">Backblaze B2</a></td></tr>
+          <tr><td><strong>Hetzner S3 + Cloudflare</strong></td><td>1 TB incl. in EUR 4.99/mo</td><td class="measured">EUR 4.99/TB-mo</td><td class="price-low">EUR 1.00/TB ($0.001/GB)</td><td class="price-low">~$104/mo</td><td><a href="https://www.hetzner.com/cloud/object-storage/" target="_blank" rel="noopener">Hetzner S3</a></td></tr>
+          <tr><td><strong>Oracle Cloud (OCI)</strong></td><td>10 TB/mo Always Free</td><td class="measured">$0.0255/GB-mo</td><td class="measured">$0.0085/GB after 10 TB</td><td class="price-mid">~$765/mo</td><td><a href="https://www.oracle.com/cloud/networking/pricing/" target="_blank" rel="noopener">OCI networking</a></td></tr>
+          <tr><td><strong>DigitalOcean Spaces</strong></td><td>$200 credit + 1 TB in $5/mo</td><td class="measured">250 GiB incl.</td><td class="measured">$0.01/GB flat global</td><td class="price-mid">$995/mo</td><td><a href="https://www.digitalocean.com/pricing/spaces-object-storage" target="_blank" rel="noopener">DO Spaces</a></td></tr>
         </tbody>
       </table>
     </div>
 
-    <footer><a href="./" style="color:var(--blue);">← Back to Interactive CDN Calculator</a> • Verified 2026-11-15</footer>
+    <footer class="site-footer">
+      <span>Verified <time class="measured" datetime="2026-11-15">2026-11-15</time>.</span>
+      <div class="footer-links">
+        <a href="./">Back to interactive CDN calculator</a>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

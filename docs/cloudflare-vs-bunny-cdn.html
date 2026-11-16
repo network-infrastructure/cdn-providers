@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cloudflare vs Bunny.net (2026): Pricing, Video ToS &amp; Performance Compared</title>
+  <title>Cloudflare vs Bunny.net (2026): Pricing and Video ToS</title>
   <meta name="description" content="Cloudflare vs Bunny.net in 2026: compare free plans, $0.005-$0.01/GB bandwidth pricing, Cloudflare video ToS restrictions, R2 vs Bunny Storage, and real-world latency." />
   <link rel="canonical" href="https://network-infrastructure.github.io/cdn-providers/cloudflare-vs-bunny-cdn.html" />
   <meta property="og:title" content="Cloudflare vs Bunny.net (2026): Which CDN Should You Choose?" />
@@ -12,6 +12,10 @@
   <meta property="og:url" content="https://network-infrastructure.github.io/cdn-providers/cloudflare-vs-bunny-cdn.html" />
   <meta property="og:image" content="https://network-infrastructure.github.io/cdn-providers/assets/preview.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,42 +40,28 @@
     ]
   }
   </script>
-  <style>
-    :root { --bg:#080d1a; --surface:#111c33; --surface-alt:#182644; --border:#263554; --text:#f8fafc; --muted:#94a3b8; --blue:#38bdf8; --accent:#10b981; --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif; }
-    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.65;overflow-x:clip}
-    .container{max-width:1080px;margin:0 auto;padding:26px 20px 72px}
-    nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:32px;flex-wrap:wrap;gap:12px}
-    .brand{font-weight:700;color:var(--text);text-decoration:none}
-    .nav-links{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
-    .nav-links a{color:var(--muted);text-decoration:none} .nav-links a:hover{color:var(--text)}
-    h1{font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0 0 14px}
-    .lead{color:var(--muted);font-size:17px;margin:0 0 28px;max-width:74ch}
-    .table-wrap{width:100%;overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:32px}
-    table{width:100%;min-width:680px;border-collapse:collapse;font-size:14px}
-    th,td{padding:12px 14px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
-    th{background:var(--surface-alt);color:var(--muted);font-size:12px;text-transform:uppercase}
-    tr:last-child td{border-bottom:none}
-    td a{color:var(--blue);text-decoration:none;font-weight:600}
-    .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:16px}
-    .card h3{margin:0 0 8px;color:var(--blue)}
-    footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
-  </style>
 </head>
 <body>
   <div class="container">
-    <nav>
-      <a class="brand" href="./">cdn-providers (2026)</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">cdn-providers</a>
       <div class="nav-links">
-        <a href="./">Live Calculator</a>
-        <a href="./free-cdn-providers.html">Free CDN Plans</a>
+        <a href="./">Live calculator</a>
+        <a href="./free-cdn-providers.html">Free CDN plans</a>
+        <a href="./cloudflare-vs-bunny-cdn.html" aria-current="page">Cloudflare vs Bunny</a>
         <a href="./cloudfront-vs-cloudflare-vs-fastly.html">CloudFront vs CF vs Fastly</a>
-        <a href="./zero-egress-s3-cdn.html">Zero-Egress S3</a>
-        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub Repo ⭐</a>
+        <a href="./zero-egress-s3-cdn.html">Zero-egress S3</a>
+        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub repository</a>
       </div>
     </nav>
 
-    <h1>Cloudflare vs Bunny.net (2026): Pricing, Video ToS &amp; Edge Performance</h1>
-    <p class="lead">Verified <strong>2026-11-15</strong>: when Cloudflare Free wins, when Bunny.net ($0.005–$0.01/GB) is mandatory, and how to combine both for under $5/month.</p>
+    <header class="hero">
+      <h1>Cloudflare vs Bunny.net (2026)</h1>
+      <p class="hero-sub">When Cloudflare Free wins, when Bunny.net ($0.005 to $0.01/GB) is required, and how to combine both.</p>
+      <div class="hero-meta">
+        <span>Verified: <time class="measured reading-amber" datetime="2026-11-15">2026-11-15</time></span>
+      </div>
+    </header>
 
     <div class="table-wrap">
       <table>
@@ -79,22 +69,27 @@
           <tr><th>Metric</th><th>Cloudflare CDN (Free / Pro)</th><th>Bunny.net (Standard / Volume)</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Pricing</strong></td><td>$0/mo (Free) • $20/mo (Pro) • $200/mo (Biz)</td><td>$1/mo minimum • $0.01/GB Standard • $0.005/GB Volume</td></tr>
-          <tr><td><strong>Edge Network</strong></td><td>330+ cities (Anycast)</td><td>123+ edge PoPs (Standard) • 12 Tier-1 Super PoPs (Volume)</td></tr>
-          <tr><td><strong>Video &amp; Large Downloads</strong></td><td>Prohibited on Free/Pro proxy (use R2 or Stream)</td><td>100% Allowed ($0.005/GB Volume or Bunny Stream)</td></tr>
-          <tr><td><strong>DDoS &amp; WAF</strong></td><td>Industry-leading L3/L4/L7 WAF included</td><td>L3/L4 included (Bunny Shield WAF optional)</td></tr>
-          <tr><td><strong>Object Storage</strong></td><td>Cloudflare R2 ($0.015/GB-mo + $0.00/GB egress)</td><td>Bunny Storage ($0.01/GB-mo + $0.005–$0.01/GB egress)</td></tr>
-          <tr><td><strong>Official Tariff</strong></td><td><a href="https://www.cloudflare.com/plans/" target="_blank" rel="noopener">cloudflare.com/plans →</a></td><td><a href="https://bunny.net/pricing/" target="_blank" rel="noopener">bunny.net/pricing →</a></td></tr>
+          <tr><td><strong>Pricing</strong></td><td class="measured">$0/mo (Free), $20/mo (Pro), $200/mo (Biz)</td><td class="measured">$1/mo minimum, $0.01/GB Standard, $0.005/GB Volume</td></tr>
+          <tr><td><strong>Edge network</strong></td><td>330+ cities (Anycast)</td><td>123+ edge PoPs (Standard), 12 Tier-1 Super PoPs (Volume)</td></tr>
+          <tr><td><strong>Video and large downloads</strong></td><td>Prohibited on Free/Pro proxy (use R2 or Stream)</td><td>100% allowed ($0.005/GB Volume or Bunny Stream)</td></tr>
+          <tr><td><strong>DDoS and WAF</strong></td><td>L3/L4/L7 WAF included</td><td>L3/L4 included (Bunny Shield WAF optional)</td></tr>
+          <tr><td><strong>Object storage</strong></td><td>Cloudflare R2 ($0.015/GB-mo + $0.00/GB egress)</td><td>Bunny Storage ($0.01/GB-mo + $0.005 to $0.01/GB egress)</td></tr>
+          <tr><td><strong>Official tariff</strong></td><td><a href="https://www.cloudflare.com/plans/" target="_blank" rel="noopener">cloudflare.com/plans</a></td><td><a href="https://bunny.net/pricing/" target="_blank" rel="noopener">bunny.net/pricing</a></td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="card">
-      <h3>The Optimal Hybrid Stack</h3>
-      <p>Keep your root domain (`example.com`) on <strong>Cloudflare Free</strong> for DNS, SSL, and WAF protection, and serve heavy downloads, images, or HLS video from <code>cdn.example.com</code> via <strong>Bunny.net</strong> or <strong>Cloudflare R2</strong>.</p>
-    </div>
+    <section class="panel-card" aria-labelledby="hybrid-heading">
+      <h2 id="hybrid-heading">The optimal hybrid stack</h2>
+      <p>Keep your root domain (<code>example.com</code>) on <strong>Cloudflare Free</strong> for DNS, SSL, and WAF protection, and serve heavy downloads, images, or HLS video from <code>cdn.example.com</code> via <strong>Bunny.net</strong> or <strong>Cloudflare R2</strong>.</p>
+    </section>
 
-    <footer><a href="./" style="color:var(--blue);">← Back to Interactive CDN Calculator</a> • Verified 2026-11-15</footer>
+    <footer class="site-footer">
+      <span>Verified <time class="measured" datetime="2026-11-15">2026-11-15</time>.</span>
+      <div class="footer-links">
+        <a href="./">Back to interactive CDN calculator</a>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

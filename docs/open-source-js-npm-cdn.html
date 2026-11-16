@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Best Free Open-Source JS, CSS &amp; npm CDNs (2026) — jsDelivr vs cdnjs vs UNPKG vs esm.sh</title>
+  <title>Best Free Open-Source JS, CSS and npm CDNs (2026)</title>
   <meta name="description" content="Compare free open-source CDNs in 2026: jsDelivr, cdnjs, UNPKG, esm.sh, Statically.io, and Google Hosted Libraries for npm, GitHub, and ES modules." />
   <link rel="canonical" href="https://network-infrastructure.github.io/cdn-providers/open-source-js-npm-cdn.html" />
   <meta property="og:title" content="jsDelivr vs cdnjs vs UNPKG vs esm.sh (2026)" />
@@ -12,6 +12,10 @@
   <meta property="og:url" content="https://network-infrastructure.github.io/cdn-providers/open-source-js-npm-cdn.html" />
   <meta property="og:image" content="https://network-infrastructure.github.io/cdn-providers/assets/preview.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,57 +32,44 @@
     ]
   }
   </script>
-  <style>
-    :root { --bg:#080d1a; --surface:#111c33; --surface-alt:#182644; --border:#263554; --text:#f8fafc; --muted:#94a3b8; --blue:#38bdf8; --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif; }
-    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.65;overflow-x:clip}
-    .container{max-width:1080px;margin:0 auto;padding:26px 20px 72px}
-    nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:32px;flex-wrap:wrap;gap:12px}
-    .brand{font-weight:700;color:var(--text);text-decoration:none}
-    .nav-links{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
-    .nav-links a{color:var(--muted);text-decoration:none} .nav-links a:hover{color:var(--text)}
-    h1{font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0 0 14px}
-    .lead{color:var(--muted);font-size:17px;margin:0 0 28px;max-width:74ch}
-    .table-wrap{width:100%;overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:32px}
-    table{width:100%;min-width:720px;border-collapse:collapse;font-size:14px}
-    th,td{padding:12px 14px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
-    th{background:var(--surface-alt);color:var(--muted);font-size:12px;text-transform:uppercase}
-    tr:last-child td{border-bottom:none}
-    td a{color:var(--blue);text-decoration:none;font-weight:600}
-    pre{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;overflow-x:auto;font-size:13px}
-    footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
-  </style>
 </head>
 <body>
   <div class="container">
-    <nav>
-      <a class="brand" href="./">cdn-providers (2026)</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">cdn-providers</a>
       <div class="nav-links">
-        <a href="./">Live Calculator</a>
-        <a href="./free-cdn-providers.html">Free CDN Plans</a>
-        <a href="./legacy-cdn-alternatives.html">Legacy Migration</a>
-        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub Repo ⭐</a>
+        <a href="./">Live calculator</a>
+        <a href="./free-cdn-providers.html">Free CDN plans</a>
+        <a href="./open-source-js-npm-cdn.html" aria-current="page">Open-source JS/npm</a>
+        <a href="./legacy-cdn-alternatives.html">Legacy migration</a>
+        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub repository</a>
       </div>
     </nav>
 
-    <h1>Free Open-Source JS, CSS &amp; npm CDNs (2026)</h1>
-    <p class="lead">100% free forever CDNs for npm packages, public GitHub repositories, and browser ES modules (Verified <strong>2026-11-15</strong>).</p>
+    <header class="hero">
+      <h1>Free Open-Source JS and npm CDNs</h1>
+      <p class="hero-sub">Unmetered free CDNs for npm packages, public GitHub repositories, and native browser ES modules.</p>
+      <div class="hero-meta">
+        <span>Verified: <time class="measured reading-amber" datetime="2026-11-15">2026-11-15</time></span>
+      </div>
+    </header>
 
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>OSS CDN</th><th>Infrastructure</th><th>Supported Sources</th><th>Key Features</th><th>Official Site</th></tr>
+          <tr><th>Open-source CDN</th><th>Infrastructure</th><th>Supported sources</th><th>Key features</th><th>Official site</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>jsDelivr</strong></td><td>Multi-CDN (CF + Fastly + Bunny + Gcore)</td><td>npm, GitHub, WordPress.org</td><td>Auto Multi-CDN failover, ESM bundling, minification</td><td><a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsdelivr.com →</a></td></tr>
-          <tr><td><strong>cdnjs</strong></td><td>Cloudflare (330+ Cities)</td><td>4,500+ curated libraries</td><td>SRI hash generator, HTTP/3, Brotli</td><td><a href="https://cdnjs.com/" target="_blank" rel="noopener">cdnjs.com →</a></td></tr>
-          <tr><td><strong>UNPKG</strong></td><td>Cloudflare + Fly.io</td><td>Any npm package</td><td>Instant mirror of every file on npm</td><td><a href="https://unpkg.com/" target="_blank" rel="noopener">unpkg.com →</a></td></tr>
-          <tr><td><strong>esm.sh</strong></td><td>Cloudflare Edge</td><td>npm &amp; JSR</td><td>CommonJS-to-ESM transform, TypeScript types</td><td><a href="https://esm.sh/" target="_blank" rel="noopener">esm.sh →</a></td></tr>
-          <tr><td><strong>Statically.io</strong></td><td>Multi-CDN (CF + Bunny + Fastly)</td><td>GitHub, GitLab, Bitbucket</td><td>Modern RawGit replacement + WebP proxy</td><td><a href="https://statically.io/" target="_blank" rel="noopener">statically.io →</a></td></tr>
+          <tr><td><strong>jsDelivr</strong></td><td>Multi-CDN (CF + Fastly + Bunny + Gcore)</td><td>npm, GitHub, WordPress.org</td><td>Auto Multi-CDN failover, ESM bundling, minification</td><td><a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsdelivr.com</a></td></tr>
+          <tr><td><strong>cdnjs</strong></td><td>Cloudflare (330+ cities)</td><td>4,500+ curated libraries</td><td>SRI hash generator, HTTP/3, Brotli</td><td><a href="https://cdnjs.com/" target="_blank" rel="noopener">cdnjs.com</a></td></tr>
+          <tr><td><strong>UNPKG</strong></td><td>Cloudflare + Fly.io</td><td>Any npm package</td><td>Instant mirror of every file on npm</td><td><a href="https://unpkg.com/" target="_blank" rel="noopener">unpkg.com</a></td></tr>
+          <tr><td><strong>esm.sh</strong></td><td>Cloudflare Edge</td><td>npm and JSR</td><td>CommonJS-to-ESM transform, TypeScript types</td><td><a href="https://esm.sh/" target="_blank" rel="noopener">esm.sh</a></td></tr>
+          <tr><td><strong>Statically.io</strong></td><td>Multi-CDN (CF + Bunny + Fastly)</td><td>GitHub, GitLab, Bitbucket</td><td>Modern RawGit replacement + WebP proxy</td><td><a href="https://statically.io/" target="_blank" rel="noopener">statically.io</a></td></tr>
         </tbody>
       </table>
     </div>
 
-    <pre><code>&lt;!-- Load any npm package via jsDelivr Multi-CDN --&gt;
+    <pre class="code-block"><code>&lt;!-- Load any npm package via jsDelivr Multi-CDN --&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"&gt;&lt;/script&gt;
 
 &lt;!-- Load a GitHub file (replaces defunct RawGit) --&gt;
@@ -89,7 +80,12 @@
   import confetti from 'https://esm.sh/canvas-confetti@1';
 &lt;/script&gt;</code></pre>
 
-    <footer><a href="./" style="color:var(--blue);">← Back to Interactive CDN Calculator</a> • Verified 2026-11-15</footer>
+    <footer class="site-footer">
+      <span>Verified <time class="measured" datetime="2026-11-15">2026-11-15</time>.</span>
+      <div class="footer-links">
+        <a href="./">Back to interactive CDN calculator</a>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

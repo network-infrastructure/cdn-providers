@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CDN Providers List &amp; Bandwidth Cost Calculator (2026) — Compare Free &amp; Paid CDNs</title>
-  <meta name="description" content="Compare 46 verified CDN providers in 2026. Calculate monthly CDN bandwidth costs from 1 TB to 500 TB, check free CDN plans &amp; ToS limits, and verify official tariffs (Updated 2026-11-15)." />
+  <title>CDN Providers List and Bandwidth Cost Calculator (2026)</title>
+  <meta name="description" content="Compare 46 verified CDN providers in 2026. Calculate monthly CDN bandwidth costs from 1 TB to 500 TB, check free CDN plans and ToS limits, and verify official tariffs (2026-11-15)." />
   <link rel="canonical" href="https://network-infrastructure.github.io/cdn-providers/" />
-  <meta property="og:title" content="CDN Providers List &amp; Bandwidth Cost Calculator (2026)" />
-  <meta property="og:description" content="Side-by-side comparison of 46 active CDN providers, live 1 TB–500 TB monthly cost calculator, free plan restrictions, and official tariff links." />
+  <meta property="og:title" content="CDN Providers List and Bandwidth Cost Calculator (2026)" />
+  <meta property="og:description" content="Side-by-side comparison of 46 active CDN providers, live 1 TB to 500 TB monthly cost calculator, free plan restrictions, and official tariff links." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://network-infrastructure.github.io/cdn-providers/" />
   <meta property="og:image" content="https://network-infrastructure.github.io/cdn-providers/assets/preview.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "CDN Providers Bandwidth Cost Calculator & Directory (2026)",
+    "name": "CDN Providers Bandwidth Cost Calculator and Directory (2026)",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" },
@@ -28,17 +32,17 @@
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Best CDN Providers & Bandwidth Cost Comparison (2026)",
+    "name": "Best CDN Providers and Bandwidth Cost Comparison (2026)",
     "url": "https://network-infrastructure.github.io/cdn-providers/",
     "numberOfItems": 8,
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Cloudflare CDN & R2 (Unlimited Web / $0.00 Egress)", "url": "https://www.cloudflare.com/plans/" },
+      { "@type": "ListItem", "position": 1, "name": "Cloudflare CDN and R2 (Unlimited Web / $0.00 Egress)", "url": "https://www.cloudflare.com/plans/" },
       { "@type": "ListItem", "position": 2, "name": "Bunny.net ($0.005-$0.01/GB, Zero Request Fees)", "url": "https://bunny.net/pricing/" },
       { "@type": "ListItem", "position": 3, "name": "Gcore CDN (1 TB/mo Always Free, 180+ PoPs)", "url": "https://gcore.com/pricing/cdn" },
       { "@type": "ListItem", "position": 4, "name": "Amazon CloudFront (1 TB/mo Always Free, 600+ PoPs)", "url": "https://aws.amazon.com/cloudfront/pricing/" },
       { "@type": "ListItem", "position": 5, "name": "Fastly CDN ($50/mo Free Dev Credit, 150ms Purge)", "url": "https://www.fastly.com/pricing/" },
       { "@type": "ListItem", "position": 6, "name": "DigitalOcean Spaces CDN ($5/mo for 1 TB + $0.01/GB)", "url": "https://www.digitalocean.com/pricing/spaces-object-storage" },
-      { "@type": "ListItem", "position": 7, "name": "CDN77 (High-Volume Video & OTT Streaming)", "url": "https://www.cdn77.com/pricing" },
+      { "@type": "ListItem", "position": 7, "name": "CDN77 (High-Volume Video and OTT Streaming)", "url": "https://www.cdn77.com/pricing" },
       { "@type": "ListItem", "position": 8, "name": "jsDelivr (100% Free Open-Source Multi-CDN)", "url": "https://www.jsdelivr.com/" }
     ]
   }
@@ -67,181 +71,161 @@
     ]
   }
   </script>
-  <style>
-    :root {
-      --bg: #080d1a;
-      --surface: #111c33;
-      --surface-alt: #182644;
-      --border: #263554;
-      --text: #f8fafc;
-      --muted: #94a3b8;
-      --accent: #10b981;
-      --blue: #38bdf8;
-      --amber: #f59e0b;
-      --red: #f87171;
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-sans); line-height: 1.6; overflow-x: clip; }
-    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 26px 20px 72px; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border); margin-bottom: 32px; flex-wrap: wrap; gap: 12px; }
-    .brand { font-weight: 700; color: var(--text); text-decoration: none; font-size: 16px; }
-    .nav-links { display: flex; gap: 18px; font-size: 14px; flex-wrap: wrap; }
-    .nav-links a { color: var(--muted); text-decoration: none; }
-    .nav-links a:hover { color: var(--text); }
-    .badge { display: inline-block; padding: 4px 12px; border-radius: 999px; background: rgba(16, 185, 129, 0.14); color: #34d399; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 14px; }
-    h1 { font-size: clamp(28px, 4vw, 42px); line-height: 1.18; margin: 0 0 14px; letter-spacing: -0.02em; }
-    .lead { font-size: 17px; color: var(--muted); max-width: 78ch; margin: 0 0 26px; }
-    .calc-panel { background: linear-gradient(180deg, var(--surface-alt) 0%, var(--surface) 100%); border: 1px solid var(--border); border-radius: 14px; padding: 22px; margin-bottom: 32px; }
-    .calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)); gap: 16px; margin-bottom: 18px; }
-    .field label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; letter-spacing: 0.04em; }
-    .field input, .field select { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 14px; font-family: var(--font-sans); }
-    .preset-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
-    .preset-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .preset-btn { padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 13px; font-weight: 600; cursor: pointer; }
-    .preset-btn.active, .preset-btn:hover { border-color: var(--blue); color: var(--blue); }
-    .export-btn { padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(16, 185, 129, 0.45); background: rgba(16, 185, 129, 0.14); color: #34d399; font-size: 13px; font-weight: 600; cursor: pointer; }
-    .export-btn:hover { background: var(--accent); color: #052e16; }
-    .table-wrap { width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 32px; }
-    table { width: 100%; min-width: 780px; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 12px 14px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
-    th { background: var(--surface-alt); color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; white-space: nowrap; }
-    tr:last-child td { border-bottom: none; }
-    td a { color: var(--blue); text-decoration: none; font-weight: 600; }
-    td a:hover { text-decoration: underline; }
-    .price-free { color: #34d399; font-weight: 700; font-family: var(--font-mono); }
-    .price-low { color: var(--blue); font-weight: 700; font-family: var(--font-mono); }
-    .price-high { color: var(--red); font-weight: 700; font-family: var(--font-mono); }
-    .silo-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 18px 0 36px; }
-    .silo-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-decoration: none; color: var(--text); font-weight: 600; font-size: 14px; }
-    .silo-card:hover { border-color: var(--blue); background: var(--surface-alt); }
-    .silo-card span { display: block; font-size: 12.5px; font-weight: 400; color: var(--muted); margin-top: 4px; }
-    .preview { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 8px 0 28px; }
-    h2 { font-size: 24px; margin: 38px 0 14px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-    footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
-  </style>
 </head>
 <body>
   <div class="container">
-    <nav>
-      <a class="brand" href="./">cdn-providers (2026)</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">cdn-providers</a>
       <div class="nav-links">
-        <a href="./free-cdn-providers.html">Free CDN Plans</a>
-        <a href="./cdn-pricing-calculator.html">1 TB–500 TB Matrix</a>
+        <a href="./free-cdn-providers.html">Free CDN plans</a>
+        <a href="./cdn-pricing-calculator.html">1 TB to 500 TB matrix</a>
         <a href="./cloudflare-vs-bunny-cdn.html">Cloudflare vs Bunny</a>
-        <a href="./video-image-cdn.html">Video &amp; Image CDNs</a>
-        <a href="./legacy-cdn-alternatives.html">Legacy Migration</a>
-        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub Repo ⭐</a>
+        <a href="./video-image-cdn.html">Video and image CDNs</a>
+        <a href="./legacy-cdn-alternatives.html">Legacy migration</a>
+        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub repository</a>
       </div>
     </nav>
 
-    <span class="badge">TARIFFS VERIFIED: 2026-11-15 • <span id="providerCount">46</span> ACTIVE CDN PROVIDERS</span>
-    <h1>CDN Providers List &amp; Monthly Bandwidth Cost Calculator</h1>
-    <p class="lead">
-      Compare <strong>46 active CDN providers</strong> with real-world pricing math from <strong>1 TB to 500 TB/month</strong>,
-      verified <strong>free CDN plans &amp; ToS restrictions</strong>, and direct links to official tariff pages.
-    </p>
+    <header class="hero">
+      <h1>CDN Providers and Bandwidth Calculator</h1>
+      <p class="hero-sub">Compare 46 verified CDN providers from 1 TB to 500 TB per month with free tier limits and official tariffs.</p>
+      <div class="hero-meta">
+        <span>Active providers: <span class="measured reading-cool" id="providerCount">46</span></span>
+        <span>Tariffs verified: <time class="measured reading-amber" datetime="2026-11-15">2026-11-15</time></span>
+        <a class="btn btn--primary" href="#calculator">Calculate monthly bill</a>
+      </div>
+    </header>
 
-    <div class="calc-panel" id="calculator">
+    <section class="calc-panel" id="calculator" aria-label="Monthly CDN bandwidth cost calculator">
       <div class="calc-grid">
         <div class="field">
-          <label for="volumeTb">Monthly Bandwidth (TB)</label>
+          <label for="volumeTb">Monthly bandwidth (TB)</label>
           <input id="volumeTb" type="number" min="0.1" max="5000" step="0.5" value="10" />
         </div>
         <div class="field">
-          <label for="requestsM">Monthly Requests (Millions)</label>
+          <label for="requestsM">Monthly requests (millions)</label>
           <input id="requestsM" type="number" min="0" max="10000" step="1" value="25" />
         </div>
         <div class="field">
-          <label for="region">Traffic Region Profile</label>
+          <label for="region">Traffic region profile</label>
           <select id="region">
-            <option value="na-eu" selected>North America &amp; Europe (NA/EU)</option>
+            <option value="na-eu" selected>North America and Europe (NA/EU)</option>
             <option value="asia">Asia-Pacific (APAC)</option>
-            <option value="global">Global Blended</option>
+            <option value="global">Global blended</option>
           </select>
         </div>
         <div class="field">
-          <label for="category">CDN Category</label>
+          <label for="category">CDN category</label>
           <select id="category">
-            <option value="all" selected>All CDN Providers</option>
-            <option value="free">Free Plans &amp; Edge Platforms</option>
-            <option value="payg">Pay-As-You-Go &amp; Object Storage</option>
-            <option value="hyperscaler">Cloud Hyperscalers (AWS/GCP/Azure)</option>
-            <option value="video">Video Streaming CDNs</option>
-            <option value="image">Image Optimization CDNs</option>
-            <option value="opensource">Open-Source JS/npm CDNs</option>
-            <option value="enterprise">Enterprise &amp; WAF CDNs</option>
+            <option value="all" selected>All CDN providers</option>
+            <option value="free">Free plans and edge platforms</option>
+            <option value="payg">Pay-as-you-go and object storage</option>
+            <option value="hyperscaler">Cloud hyperscalers (AWS/GCP/Azure)</option>
+            <option value="video">Video streaming CDNs</option>
+            <option value="image">Image optimization CDNs</option>
+            <option value="opensource">Open-source JS/npm CDNs</option>
+            <option value="enterprise">Enterprise and WAF CDNs</option>
           </select>
         </div>
         <div class="field">
-          <label for="searchBox">Search Provider / Feature</label>
-          <input id="searchBox" type="text" placeholder="e.g. Bunny, R2, China, HLS..." />
+          <label for="searchBox">Search provider or feature</label>
+          <input id="searchBox" type="text" placeholder="Bunny, R2, China, HLS" />
         </div>
       </div>
+
       <div class="preset-row">
         <div class="preset-group">
-          <span style="font-size:13px; color:var(--muted); margin-right:4px;">Presets:</span>
-          <button class="preset-btn" data-tb="1" data-req="2">1 TB/mo</button>
-          <button class="preset-btn active" data-tb="10" data-req="25">10 TB/mo</button>
-          <button class="preset-btn" data-tb="50" data-req="100">50 TB/mo</button>
-          <button class="preset-btn" data-tb="100" data-req="250">100 TB/mo</button>
-          <button class="preset-btn" data-tb="500" data-req="1000">500 TB/mo</button>
-          <label style="font-size:13px; color:var(--muted); margin-left:8px; cursor:pointer;">
-            <input type="checkbox" id="freeOnly" style="vertical-align:middle; margin-right:4px;" /> Free Tier Only
+          <span class="preset-label">Presets:</span>
+          <button type="button" class="btn preset-btn" data-tb="1" data-req="2">1 TB/mo</button>
+          <button type="button" class="btn preset-btn btn--active" data-tb="10" data-req="25">10 TB/mo</button>
+          <button type="button" class="btn preset-btn" data-tb="50" data-req="100">50 TB/mo</button>
+          <button type="button" class="btn preset-btn" data-tb="100" data-req="250">100 TB/mo</button>
+          <button type="button" class="btn preset-btn" data-tb="500" data-req="1000">500 TB/mo</button>
+          <label class="check-label">
+            <input type="checkbox" id="freeOnly" />
+            <span>Free tier only</span>
           </label>
         </div>
-        <button class="export-btn" id="exportCsv">Export CSV</button>
+        <button type="button" class="btn btn--primary" id="exportCsv">Export CSV</button>
       </div>
-    </div>
+    </section>
 
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>CDN Provider</th>
-            <th>Free Tier / Trial</th>
-            <th>Rate / GB</th>
-            <th>Est. Monthly Cost</th>
-            <th>Restrictions &amp; Notes</th>
-            <th>Official Tariff (Verified)</th>
+            <th>CDN provider</th>
+            <th>Free tier or trial</th>
+            <th>Rate per GB</th>
+            <th>Estimated monthly cost</th>
+            <th>Restrictions and notes</th>
+            <th>Official tariff</th>
           </tr>
         </thead>
         <tbody id="cdnTableBody"></tbody>
       </table>
     </div>
 
-    <h2>📚 Explore Deep-Dive CDN Guides &amp; Comparisons</h2>
-    <div class="silo-links">
-      <a class="silo-card" href="./free-cdn-providers.html">Free CDN Plans &amp; Traps <span>Cloudflare ToS, CloudFront 1 TB, Netlify $0.55/GB</span></a>
-      <a class="silo-card" href="./cdn-pricing-calculator.html">1 TB to 500 TB Cost Matrix <span>Side-by-side FinOps table across 5 traffic tiers</span></a>
-      <a class="silo-card" href="./cloudflare-vs-bunny-cdn.html">Cloudflare vs Bunny.net <span>Video ToS, R2 vs Bunny Storage &amp; hybrid stack</span></a>
-      <a class="silo-card" href="./cloudfront-vs-cloudflare-vs-fastly.html">CloudFront vs Cloudflare vs Fastly <span>1 TB–100 TB costs, request fees &amp; 150ms purge</span></a>
-      <a class="silo-card" href="./zero-egress-s3-cdn.html">Zero-Egress S3 + CDN Stacks <span>Cloudflare R2, Backblaze B2, Hetzner S3 &amp; OCI</span></a>
-      <a class="silo-card" href="./video-image-cdn.html">Video &amp; Image CDNs <span>Bunny Stream, Cloudflare Stream, Mux, ImageKit</span></a>
-      <a class="silo-card" href="./open-source-js-npm-cdn.html">Open-Source JS &amp; npm CDNs <span>jsDelivr, cdnjs, UNPKG, esm.sh &amp; Statically</span></a>
-      <a class="silo-card" href="./china-and-apac-cdn-providers.html">China &amp; APAC CDN Providers <span>Alibaba Cloud, Tencent EdgeOne &amp; Near-China PoPs</span></a>
-      <a class="silo-card" href="./legacy-cdn-alternatives.html">Legacy CDN Migration <span>Replacing MaxCDN, StackPath, Edgio &amp; Incapsula</span></a>
-    </div>
+    <section class="section-block" aria-labelledby="guides-heading">
+      <h2 class="section-head" id="guides-heading">Deep-dive CDN guides and comparisons</h2>
+      <div class="silo-grid">
+        <a class="silo-item" href="./free-cdn-providers.html">
+          <span class="silo-title">Free CDN plans and limits</span>
+          <span class="silo-desc">Cloudflare ToS, CloudFront 1 TB cap, Netlify $0.55/GB overage</span>
+        </a>
+        <a class="silo-item" href="./cdn-pricing-calculator.html">
+          <span class="silo-title">1 TB to 500 TB cost matrix</span>
+          <span class="silo-desc">Side-by-side FinOps table across five traffic tiers</span>
+        </a>
+        <a class="silo-item" href="./cloudflare-vs-bunny-cdn.html">
+          <span class="silo-title">Cloudflare vs Bunny.net</span>
+          <span class="silo-desc">Video ToS, R2 vs Bunny Storage, and hybrid setup</span>
+        </a>
+        <a class="silo-item" href="./cloudfront-vs-cloudflare-vs-fastly.html">
+          <span class="silo-title">CloudFront vs Cloudflare vs Fastly</span>
+          <span class="silo-desc">1 TB to 100 TB costs, request fees, and 150ms purge</span>
+        </a>
+        <a class="silo-item" href="./zero-egress-s3-cdn.html">
+          <span class="silo-title">Zero-egress S3 and CDN stacks</span>
+          <span class="silo-desc">Cloudflare R2, Backblaze B2, Hetzner S3, and Oracle OCI</span>
+        </a>
+        <a class="silo-item" href="./video-image-cdn.html">
+          <span class="silo-title">Video and image CDNs</span>
+          <span class="silo-desc">Bunny Stream, Cloudflare Stream, Mux, and ImageKit</span>
+        </a>
+        <a class="silo-item" href="./open-source-js-npm-cdn.html">
+          <span class="silo-title">Open-source JS and npm CDNs</span>
+          <span class="silo-desc">jsDelivr, cdnjs, UNPKG, esm.sh, and Statically</span>
+        </a>
+        <a class="silo-item" href="./china-and-apac-cdn-providers.html">
+          <span class="silo-title">China and APAC CDN providers</span>
+          <span class="silo-desc">Alibaba Cloud, Tencent EdgeOne, and Near-China PoPs</span>
+        </a>
+        <a class="silo-item" href="./legacy-cdn-alternatives.html">
+          <span class="silo-title">Legacy CDN migration</span>
+          <span class="silo-desc">Replacing MaxCDN, StackPath, Edgio, and Incapsula</span>
+        </a>
+      </div>
+    </section>
 
-    <img class="preview" src="assets/preview.svg" alt="CDN Providers Pricing Comparison Preview" />
-
-    <footer>
-      MIT License • Tariffs last verified <strong>2026-11-15</strong> •
-      <a href="https://github.com/network-infrastructure/cdn-providers" style="color:var(--blue);">github.com/network-infrastructure/cdn-providers</a> •
-      <a href="./llms.txt" style="color:var(--blue);">llms.txt</a>
+    <footer class="site-footer">
+      <span>MIT License. Tariffs verified <time class="measured" datetime="2026-11-15">2026-11-15</time>.</span>
+      <div class="footer-links">
+        <a href="https://github.com/network-infrastructure/cdn-providers">github.com/network-infrastructure/cdn-providers</a>
+        <a href="./llms.txt">llms.txt</a>
+      </div>
     </footer>
   </div>
 
   <script>
     let CDNS = [
-      { id: "cloudflare", name: "Cloudflare CDN", cat: "free", free: "Unlimited HTML/CSS/JS", freeTb: -1, na: 0, asia: 0, global: 0, req10k: 0, min: 0, note: "Prohibits raw video/binary archives unless paired with R2 or Stream.", url: "https://www.cloudflare.com/plans/", verified: "2026-11-15" },
-      { id: "cloudflare-r2", name: "Cloudflare R2 + CDN", cat: "payg", free: "10 GB + ∞ Egress", freeTb: -1, na: 0, asia: 0, global: 0, req10k: 0.0036, min: 0, note: "$0.00/GB egress forever; storage is $0.015/GB-mo after 10 GB.", url: "https://developers.cloudflare.com/r2/pricing/", verified: "2026-11-15" },
+      { id: "cloudflare", name: "Cloudflare CDN", cat: "free", free: "Unlimited HTML/CSS/JS", freeTb: -1, na: 0, asia: 0, global: 0, req10k: 0, min: 0, note: "Prohibits raw video or binary archives unless paired with R2 or Stream.", url: "https://www.cloudflare.com/plans/", verified: "2026-11-15" },
+      { id: "cloudflare-r2", name: "Cloudflare R2 + CDN", cat: "payg", free: "10 GB + unlimited egress", freeTb: -1, na: 0, asia: 0, global: 0, req10k: 0.0036, min: 0, note: "$0.00/GB egress forever; storage is $0.015/GB-mo after 10 GB.", url: "https://developers.cloudflare.com/r2/pricing/", verified: "2026-11-15" },
       { id: "bunny-volume", name: "Bunny.net (Volume)", cat: "payg", free: "14-day trial (1 TB)", freeTb: 0, na: 0.005, asia: 0.005, global: 0.005, req10k: 0, min: 1, note: "12 Tier-1 Super PoPs, zero request fees, $1/mo minimum.", url: "https://bunny.net/pricing/", verified: "2026-11-15" },
       { id: "bunny-standard", name: "Bunny.net (Standard)", cat: "payg", free: "14-day trial (1 TB)", freeTb: 0, na: 0.01, asia: 0.03, global: 0.02, req10k: 0, min: 1, note: "123+ edge PoPs, zero request fees, $1/mo minimum.", url: "https://bunny.net/pricing/", verified: "2026-11-15" },
-      { id: "aws-cloudfront", name: "Amazon CloudFront", cat: "hyperscaler", free: "1 TB/mo + 10M reqs Free", freeTb: 1, na: 0.085, asia: 0.11, global: 0.095, req10k: 0.01, min: 0, note: "High list price after 1 TB ($0.085/GB + $0.01/10k reqs).", url: "https://aws.amazon.com/cloudfront/pricing/", verified: "2026-11-15" },
-      { id: "gcore", name: "Gcore CDN", cat: "payg", free: "1 TB/mo + 1M reqs Free", freeTb: 1, na: 0.02, asia: 0.04, global: 0.025, req10k: 0, min: 0, note: "180+ PoPs; free tier caps at 1M reqs/mo.", url: "https://gcore.com/pricing/cdn", verified: "2026-11-15" },
-      { id: "fastly", name: "Fastly CDN", cat: "payg", free: "$50/mo Always Free", freeTb: 0, na: 0.12, asia: 0.19, global: 0.14, req10k: 0.0075, min: 0, note: "150ms instant purge + VCL/Wasm; $50/mo credit deducted.", url: "https://www.fastly.com/pricing/", verified: "2026-11-15" }
+      { id: "aws-cloudfront", name: "Amazon CloudFront", cat: "hyperscaler", free: "1 TB/mo + 10M reqs free", freeTb: 1, na: 0.085, asia: 0.11, global: 0.095, req10k: 0.01, min: 0, note: "High list price after 1 TB ($0.085/GB + $0.01/10k reqs).", url: "https://aws.amazon.com/cloudfront/pricing/", verified: "2026-11-15" },
+      { id: "gcore", name: "Gcore CDN", cat: "payg", free: "1 TB/mo + 1M reqs free", freeTb: 1, na: 0.02, asia: 0.04, global: 0.025, req10k: 0, min: 0, note: "180+ PoPs; free tier caps at 1M reqs/mo.", url: "https://gcore.com/pricing/cdn", verified: "2026-11-15" },
+      { id: "fastly", name: "Fastly CDN", cat: "payg", free: "$50/mo always free", freeTb: 0, na: 0.12, asia: 0.19, global: 0.14, req10k: 0.0075, min: 0, note: "150ms instant purge + VCL/Wasm; $50/mo credit deducted.", url: "https://www.fastly.com/pricing/", verified: "2026-11-15" }
     ];
 
     let lastRendered = [];
@@ -292,16 +276,16 @@
       lastRendered = list;
       const tbody = document.getElementById("cdnTableBody");
       tbody.innerHTML = list.map(p => {
-        const cls = p.est === 0 ? "price-free" : (p.est <= 150 ? "price-low" : (p.est >= 1000 ? "price-high" : ""));
+        const cls = p.est === 0 ? "price-free" : (p.est <= 150 ? "price-low" : (p.est >= 1000 ? "price-high" : "price-mid"));
         const estText = p.est === 0 ? "$0.00 (Free)" : "$" + p.est.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "/mo";
         const rateText = p.rate === 0 ? "$0.00/GB" : "$" + p.rate + "/GB";
         return `<tr>
           <td><strong>${p.name}</strong></td>
           <td>${p.free}</td>
-          <td><code>${rateText}</code></td>
+          <td class="measured">${rateText}</td>
           <td class="${cls}">${estText}</td>
-          <td style="color:var(--muted); font-size:13px;">${p.note}</td>
-          <td><a href="${p.url}" target="_blank" rel="noopener">Official Tariff →</a><br><span style="font-size:11px; color:var(--muted);">Verified ${p.verified}</span></td>
+          <td class="note-cell">${p.note}</td>
+          <td><a href="${p.url}" target="_blank" rel="noopener">Official tariff</a><span class="verified-date">Verified ${p.verified}</span></td>
         </tr>`;
       }).join("");
     }
@@ -319,8 +303,8 @@
 
     document.querySelectorAll(".preset-btn").forEach(btn => {
       btn.addEventListener("click", () => {
-        document.querySelectorAll(".preset-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
+        document.querySelectorAll(".preset-btn").forEach(b => b.classList.remove("btn--active"));
+        btn.classList.add("btn--active");
         document.getElementById("volumeTb").value = btn.dataset.tb;
         document.getElementById("requestsM").value = btn.dataset.req;
         render();
