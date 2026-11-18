@@ -217,6 +217,12 @@ python3 cdn_calculator.py --volume-tb 100 --json
 - 📦 [**Free Open-Source JS, CSS & npm CDNs**](https://network-infrastructure.github.io/cdn-providers/open-source-js-npm-cdn.html) — jsDelivr vs cdnjs vs UNPKG vs esm.sh.
 - 🌏 [**China & APAC CDN Providers**](https://network-infrastructure.github.io/cdn-providers/china-and-apac-cdn-providers.html) — Alibaba Cloud, Tencent EdgeOne & Near-China PoPs.
 - 🪦 [**Legacy CDN Migration Guide (MaxCDN, StackPath, Edgio)**](guides/legacy-cdn-migration-guide-maxcdn-edgio-stackpath.md) ([Web](https://network-infrastructure.github.io/cdn-providers/legacy-cdn-alternatives.html)) — Step-by-step migration checklist.
+- 📰 [**Best WordPress CDN Providers (2026)**](https://network-infrastructure.github.io/cdn-providers/wordpress-cdn-providers.html) — Cloudflare APO, QUIC.cloud, Bunny.net & Jetpack.
+- 🎮 [**Gaming & Large File Download CDNs**](https://network-infrastructure.github.io/cdn-providers/gaming-and-large-file-cdn.html) — Bunny Volume, Cloudflare R2, Gcore & CacheFly.
+- 🛡️ [**CDN Providers with WAF & DDoS Protection**](https://network-infrastructure.github.io/cdn-providers/cdn-with-waf-and-ddos-protection.html) — Cloudflare, Gcore, Imperva, Akamai & Sucuri.
+- 🇪🇺 [**European & GDPR-Compliant CDN Providers**](https://network-infrastructure.github.io/cdn-providers/european-gdpr-cdn-providers.html) — Bunny.net, OVHcloud, Scaleway, Hetzner & KeyCDN.
+- 🔀 [**Multi-CDN Providers & Routing**](https://network-infrastructure.github.io/cdn-providers/multi-cdn-providers-and-routing.html) — jsDelivr, Mux, Cloudinary & DNS failover.
+- 🏢 [**Akamai vs Cloudflare vs Fastly (Enterprise)**](https://network-infrastructure.github.io/cdn-providers/akamai-vs-cloudflare-vs-fastly.html) — ISP-embedded PoPs & edge compute.
 
 ---
 

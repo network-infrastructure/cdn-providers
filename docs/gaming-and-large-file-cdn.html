@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaming, Game Patch and Large File CDNs (2026)</title>
+  <meta name="description" content="Best CDN providers for game patches, Linux ISOs, installers, and large binary downloads in 2026: Bunny.net Volume, Cloudflare R2, CacheFly, Gcore, and CDN77." />
+  <link rel="canonical" href="https://network-infrastructure.github.io/cdn-providers/gaming-and-large-file-cdn.html" />
+  <meta property="og:title" content="Gaming, Game Patch and Large File CDNs (2026)" />
+  <meta property="og:description" content="Compare high-throughput CDNs for large binary downloads, game updates, and 100 TB to 500 TB monthly transfer." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://network-infrastructure.github.io/cdn-providers/gaming-and-large-file-cdn.html" />
+  <meta property="og:image" content="https://network-infrastructure.github.io/cdn-providers/assets/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#101216" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which CDN is best for distributing large game patches and software binaries?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bunny.net Volume ($0.005/GB), Cloudflare R2 ($0.00/GB egress), and CacheFly (TCP Anycast) are built for multi-gigabyte downloads without violating fair-use HTML proxy terms."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">cdn-providers</a>
+      <div class="nav-links">
+        <a href="./">Live calculator</a>
+        <a href="./cdn-pricing-calculator.html">1 TB to 500 TB matrix</a>
+        <a href="./gaming-and-large-file-cdn.html" aria-current="page">Gaming and large files</a>
+        <a href="./zero-egress-s3-cdn.html">Zero-egress S3</a>
+        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub repository</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>Gaming and Large File CDNs</h1>
+      <p class="hero-sub">High-throughput edge networks for game patches, launchers, installers, and large binary assets from 50 TB to 500 TB.</p>
+      <div class="hero-meta">
+        <span>Verified: <time class="measured reading-amber" datetime="2026-11-18">2026-11-18</time></span>
+      </div>
+    </header>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>CDN provider</th><th>Rate per GB</th><th>100 TB/mo est.</th><th>Strength for downloads</th><th>Official tariff</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Cloudflare R2 + CDN</strong></td><td class="price-free">$0.00/GB egress</td><td class="price-low">~$90/mo</td><td>Zero egress fees on binaries and game assets</td><td><a href="https://developers.cloudflare.com/r2/pricing/" target="_blank" rel="noopener">R2 pricing</a></td></tr>
+          <tr><td><strong>Bunny.net (Volume)</strong></td><td class="price-low">$0.005/GB</td><td class="price-mid">$450/mo</td><td>12 Tier-1 Super PoPs, zero request fees</td><td><a href="https://bunny.net/pricing/" target="_blank" rel="noopener">Bunny.net</a></td></tr>
+          <tr><td><strong>BlazingCDN</strong></td><td class="price-low">$0.005/GB NA/EU</td><td class="price-mid">$400/mo</td><td>Flat $5/TB throughput in Europe and North America</td><td><a href="https://blazingcdn.com/pricing/" target="_blank" rel="noopener">BlazingCDN</a></td></tr>
+          <tr><td><strong>Gcore CDN</strong></td><td class="measured">$0.02/GB (1 TB free)</td><td class="price-mid">$750/mo</td><td>180+ PoPs with strong LATAM, CIS, and APAC reach</td><td><a href="https://gcore.com/pricing/cdn" target="_blank" rel="noopener">Gcore</a></td></tr>
+          <tr><td><strong>CacheFly</strong></td><td class="measured">$0.015/GB</td><td class="price-high">$1,100/mo</td><td>TCP Anycast tuned for multi-GB game patch spikes</td><td><a href="https://www.cachefly.com/pricing/" target="_blank" rel="noopener">CacheFly</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="site-footer">
+      <span>Verified <time class="measured" datetime="2026-11-18">2026-11-18</time>.</span>
+      <div class="footer-links">
+        <a href="./">Back to interactive CDN calculator</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-CDN Providers and Traffic Routing (2026)</title>
+  <meta name="description" content="Compare Multi-CDN platforms and RUM DNS failover architectures in 2026: jsDelivr, Mux Video, Cloudinary, Cloudflare Load Balancing, and NS1/Cedexis." />
+  <link rel="canonical" href="https://network-infrastructure.github.io/cdn-providers/multi-cdn-providers-and-routing.html" />
+  <meta property="og:title" content="Multi-CDN Providers and Traffic Routing (2026)" />
+  <meta property="og:description" content="How to eliminate single-CDN outages using Multi-CDN routing across Cloudflare, Fastly, Bunny.net, and Akamai." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://network-infrastructure.github.io/cdn-providers/multi-cdn-providers-and-routing.html" />
+  <meta property="og:image" content="https://network-infrastructure.github.io/cdn-providers/assets/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#101216" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When should a team adopt a Multi-CDN architecture?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multi-CDN is worth the operational overhead when uptime SLA exceeds 99.99%, when a single CDN outage stops revenue, or when serving global video/gaming traffic across regions where different CDNs lead."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">cdn-providers</a>
+      <div class="nav-links">
+        <a href="./">Live calculator</a>
+        <a href="./multi-cdn-providers-and-routing.html" aria-current="page">Multi-CDN routing</a>
+        <a href="./open-source-js-npm-cdn.html">Open-source JS/npm</a>
+        <a href="./video-image-cdn.html">Video and image CDNs</a>
+        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub repository</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>Multi-CDN Providers and Routing</h1>
+      <p class="hero-sub">Built-in Multi-CDN networks and DNS steering strategies to survive single-provider edge outages.</p>
+      <div class="hero-meta">
+        <span>Verified: <time class="measured reading-amber" datetime="2026-11-18">2026-11-18</time></span>
+      </div>
+    </header>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Platform</th><th>Underlying CDNs</th><th>Use case</th><th>Starting cost</th><th>Official site</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>jsDelivr</strong></td><td>Cloudflare + Fastly + Bunny + Gcore</td><td>Public npm and GitHub assets</td><td class="price-free">$0 forever</td><td><a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsDelivr</a></td></tr>
+          <tr><td><strong>Statically.io</strong></td><td>Cloudflare + Bunny + Fastly</td><td>Open-source Git files and images</td><td class="price-free">$0 forever</td><td><a href="https://statically.io/" target="_blank" rel="noopener">Statically</a></td></tr>
+          <tr><td><strong>Mux Video</strong></td><td>Fastly + CloudFront + Akamai</td><td>QoE-steered HLS video API</td><td class="measured">$0.0009/min</td><td><a href="https://www.mux.com/pricing/video" target="_blank" rel="noopener">Mux</a></td></tr>
+          <tr><td><strong>Cloudinary</strong></td><td>Akamai + Fastly + CloudFront</td><td>Enterprise image and video DAM</td><td class="measured">25 credits free / $89+</td><td><a href="https://cloudinary.com/pricing" target="_blank" rel="noopener">Cloudinary</a></td></tr>
+          <tr><td><strong>DIY DNS Failover</strong></td><td>Bunny.net + Gcore + CloudFront</td><td>Custom web and binary delivery</td><td class="price-low">From $5/mo (Route 53 / NS1)</td><td><a href="./cdn-pricing-calculator.html">Compare tariffs</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="site-footer">
+      <span>Verified <time class="measured" datetime="2026-11-18">2026-11-18</time>.</span>
+      <div class="footer-links">
+        <a href="./">Back to interactive CDN calculator</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

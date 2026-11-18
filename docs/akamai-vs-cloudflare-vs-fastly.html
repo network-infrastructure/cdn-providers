@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akamai vs Cloudflare vs Fastly (2026 Enterprise)</title>
+  <meta name="description" content="Enterprise CDN comparison for 2026: Akamai Connected Cloud vs Cloudflare Enterprise vs Fastly across PoPs, WAF, edge compute, and 100 TB to 500 TB pricing." />
+  <link rel="canonical" href="https://network-infrastructure.github.io/cdn-providers/akamai-vs-cloudflare-vs-fastly.html" />
+  <meta property="og:title" content="Akamai vs Cloudflare vs Fastly (2026 Enterprise)" />
+  <meta property="og:description" content="Compare Akamai, Cloudflare, and Fastly across ISP-embedded PoPs, cache purge latency, EdgeWorkers/Workers/Compute@Edge, and enterprise pricing." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://network-infrastructure.github.io/cdn-providers/akamai-vs-cloudflare-vs-fastly.html" />
+  <meta property="og:image" content="https://network-infrastructure.github.io/cdn-providers/assets/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#101216" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When is Akamai better than Cloudflare or Fastly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Akamai excels at massive ISP-embedded edge reach (4,100+ locations inside telecom networks) for global broadcasters, banks, and regulated enterprises, whereas Cloudflare leads on self-serve speed and Zero Trust integration and Fastly leads on programmable VCL and sub-150ms cache invalidation."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">cdn-providers</a>
+      <div class="nav-links">
+        <a href="./">Live calculator</a>
+        <a href="./akamai-vs-cloudflare-vs-fastly.html" aria-current="page">Akamai vs CF vs Fastly</a>
+        <a href="./cloudfront-vs-cloudflare-vs-fastly.html">CloudFront vs CF vs Fastly</a>
+        <a href="./cdn-with-waf-and-ddos-protection.html">WAF and DDoS CDNs</a>
+        <a href="https://github.com/network-infrastructure/cdn-providers">GitHub repository</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>Akamai vs Cloudflare vs Fastly</h1>
+      <p class="hero-sub">Enterprise CDN comparison across ISP-embedded PoPs, instant cache purge, edge compute, and high-volume contracts.</p>
+      <div class="hero-meta">
+        <span>Verified: <time class="measured reading-amber" datetime="2026-11-18">2026-11-18</time></span>
+      </div>
+    </header>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>Akamai Connected Cloud</th><th>Cloudflare Enterprise</th><th>Fastly CDN</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Edge footprint</strong></td><td class="measured">4,100+ ISP-embedded PoPs</td><td class="measured">330+ Anycast cities</td><td class="measured">100+ high-density Super PoPs</td></tr>
+          <tr><td><strong>Self-serve entry</strong></td><td>Cloud Object CDN ($5/mo), Ion requires sales</td><td class="price-free">$0 Free / $20 Pro / $200 Biz</td><td class="price-free">$50/mo Always Free Dev</td></tr>
+          <tr><td><strong>Edge compute</strong></td><td>EdgeWorkers (JavaScript)</td><td>Cloudflare Workers + R2 + D1</td><td>Compute@Edge (Rust/Wasm) + VCL</td></tr>
+          <tr><td><strong>Cache invalidation</strong></td><td>Fast Purge (~5 seconds)</td><td>~300ms global purge</td><td>&lt;150ms Surrogate-Key purge</td></tr>
+          <tr><td><strong>Official pricing</strong></td><td><a href="https://www.akamai.com/pricing" target="_blank" rel="noopener">Akamai</a></td><td><a href="https://www.cloudflare.com/plans/" target="_blank" rel="noopener">Cloudflare</a></td><td><a href="https://www.fastly.com/pricing/" target="_blank" rel="noopener">Fastly</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="site-footer">
+      <span>Verified <time class="measured" datetime="2026-11-18">2026-11-18</time>.</span>
+      <div class="footer-links">
+        <a href="./">Back to interactive CDN calculator</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
