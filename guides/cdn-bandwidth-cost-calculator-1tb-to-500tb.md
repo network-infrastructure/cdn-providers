@@ -47,6 +47,6 @@ python3 cdn_calculator.py --category payg --volume-tb 75
 
 ## 3. FinOps Rule of Thumb by Volume Tier
 
-* **0 – 1 TB/month:** Use **Cloudflare Free**, **AWS CloudFront** (1 TB Always Free), or **Gcore** (1 TB Always Free).
-* **1 – 25 TB/month:** **Bunny.net Standard** (`$0.01/GB`), **Bunny.net Volume** (`$0.005/GB`), **DigitalOcean Spaces** (`$5` + `$0.01/GB`), or **Cloudflare R2** (`$0` egress).
-* **50 – 500+ TB/month:** **Bunny.net Volume** (`$0.002–$0.005/GB`), **CDN77**, **CacheFly**, or **Cloudflare R2** — or negotiate a custom **AWS CloudFront Security Savings Bundle** if locked into AWS.
+* **0 to 1 TB/month:** Use **Cloudflare Free**, **AWS CloudFront** (1 TB Always Free), or **Gcore** (1 TB Always Free).
+* **1 to 25 TB/month:** **Bunny.net Standard** (`$0.01/GB`), **Bunny.net Volume** (`$0.005/GB`), **DigitalOcean Spaces** (`$5` + `$0.01/GB`), or **Cloudflare R2** (`$0` egress).
+* **50 to 500+ TB/month:** **Bunny.net Volume** (`$0.002–$0.005/GB`), **CDN77**, **CacheFly**, or **Cloudflare R2**, or negotiate a custom **AWS CloudFront Security Savings Bundle** if locked into AWS.

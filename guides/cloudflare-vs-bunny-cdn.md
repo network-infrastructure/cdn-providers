@@ -2,7 +2,7 @@
 
 > **Last Verified:** `2026-11-15` • [Back to Main CDN Directory](../README.md) • [Interactive Web Comparison](https://network-infrastructure.github.io/cdn-providers/cloudflare-vs-bunny-cdn.html)
 
-**Cloudflare** and **Bunny.net** are the two most popular CDN providers for modern web apps, SaaS platforms, and creators — yet they solve completely different problems.
+**Cloudflare** and **Bunny.net** are two widely used CDN providers for web apps, SaaS platforms, and media delivery, though they solve different problems.
 
 ---
 
@@ -14,7 +14,7 @@
 | **Global Edge PoPs** | 330+ cities (Anycast) | 123+ PoPs (Standard) • 12 Super PoPs (Volume) |
 | **HTTP Request Fees** | $0.00 | **$0.00** |
 | **Video / Large File Downloads** | ❌ **Prohibited on Free/Pro proxy** (must use R2 or Stream) | ✅ **100% Allowed** ($0.005/GB Volume or Bunny Stream) |
-| **DDoS Protection & WAF** | ✅ Industry-leading L3/L4/L7 WAF included | Basic L3/L4 protection (Bunny Shield add-on) |
+| **DDoS Protection & WAF** | ✅ Managed L3/L4/L7 WAF included | Basic L3/L4 protection (Bunny Shield add-on) |
 | **Storage + Egress** | **Cloudflare R2** ($0.015/GB-mo + $0.00/GB egress) | **Bunny Storage** ($0.01/GB-mo + $0.005–$0.01/GB egress) |
 
 ## Which One Should You Choose?

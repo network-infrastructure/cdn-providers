@@ -33,7 +33,7 @@ Cloudflare's *Service-Specific Terms* prohibit serving disproportionate volumes 
 * **The Fix:** Store large files, MP4s, game assets, or backups on **Cloudflare R2** (`$0.00/GB` egress, 10 GB free) or **Backblaze B2** (`$6/TB/mo` + `$0.00/GB` egress to Cloudflare/Bunny via the Bandwidth Alliance).
 
 ### Trap #2: Netlify's `$55 per 100 GB` ($0.55/GB) Overage Billing
-Netlify Starter includes 100 GB/month, and Netlify Pro ($19/mo) includes 1 TB/month. Once you cross that threshold, Netlify automatically bills **$55 per 100 GB ($0.55/GB)** — which is **55x more expensive** than Bunny.net ($0.01/GB) or DigitalOcean Spaces ($0.01/GB).
+Netlify Starter includes 100 GB/month, and Netlify Pro ($19/mo) includes 1 TB/month. Once you cross that threshold, Netlify automatically bills **$55 per 100 GB ($0.55/GB)**, which is **55x more expensive** than Bunny.net ($0.01/GB) or DigitalOcean Spaces ($0.01/GB).
 * **The Fix:** Use **Cloudflare Pages** (unlimited static bandwidth) or offload heavy images/PDFs/videos to **Bunny.net** or **Cloudflare R2**.
 
 ### Trap #3: AWS CloudFront & Fastly Request Fees on Small Assets

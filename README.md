@@ -2,7 +2,7 @@
 
 # CDN Providers List, Free Plans & Bandwidth Cost Calculator (2026)
 
-**The complete, verified comparison of 46 active CDN providers — featuring real-world cost calculations from 1 TB to 500 TB/month, free CDN plans with exact restrictions, official tariff links, and a legacy CDN migration guide.**
+**Verified comparison of 46 active CDN providers with cost calculations from 1 TB to 500 TB/month, free CDN plans and limits, official tariff links, and legacy CDN migrations.**
 
 [![Verified Providers](https://img.shields.io/badge/Verified_CDNs-46_Active-10b981?style=flat-square)](#-complete-cdn-providers-comparison-table-2026)
 [![Last Verified](https://img.shields.io/badge/Tariffs_Verified-2026--11--15-3b82f6?style=flat-square)](#-multi-volume-cdn-cost-calculation-1-tb--10-tb--50-tb--100-tb--500-tb)
@@ -81,7 +81,7 @@ Every **"free CDN"** comes with strict Terms of Service boundaries, request caps
 | **Cloudflare Pages** | **Unlimited** static bandwidth | 25 MB/file • 20,000 files | ✅ Yes | Static sites & Workers SSR only; 500 builds/month | [Pages Limits →](https://pages.cloudflare.com/) |
 | **Cloudflare R2** | **10 GB** storage + **∞ Egress** | 1M Class A + 10M Class B/mo | ✅ Yes | Credit card required to activate (free within quota); $0.015/GB-mo storage above 10 GB | [R2 Pricing →](https://developers.cloudflare.com/r2/pricing/) |
 | **Oracle Cloud (OCI)** | **10 TB/mo** outbound egress | 4 ARM cores + 200 GB SSD | ✅ Yes | Credit card verification required; raw VM/Object egress (pair with Cloudflare for Edge PoPs) | [OCI Free Tier →](https://www.oracle.com/cloud/networking/pricing/) |
-| **Amazon CloudFront** | **1 TB/mo** Always Free | **10,000,000 HTTP/S reqs/mo** | ✅ Yes | **$0.085/GB** + **$0.01/10k reqs** immediately after 1 TB — set AWS Budgets alerts! | [CloudFront Free →](https://aws.amazon.com/cloudfront/pricing/) |
+| **Amazon CloudFront** | **1 TB/mo** Always Free | **10,000,000 HTTP/S reqs/mo** | ✅ Yes | **$0.085/GB** + **$0.01/10k reqs** immediately after 1 TB (set AWS Budgets alerts) | [CloudFront Free →](https://aws.amazon.com/cloudfront/pricing/) |
 | **Gcore CDN** | **1 TB/mo** Always Free | **1,000,000 requests/mo** | ✅ Yes | Free plan caps at 1 resource & 1M reqs; upgrading removes caps from $35/mo | [Gcore Free →](https://gcore.com/pricing/cdn) |
 | **Fastly Developer** | **$50/mo** Always Free credit | ~400 GB NA/EU or ~4M reqs | ✅ Yes | High overage ($0.12/GB) if traffic spikes above $50/mo | [Fastly Pricing →](https://www.fastly.com/pricing/) |
 | **Vercel Hobby** | **100 GB/mo** Fast Transfer | 1,000,000 Edge Requests/mo | ❌ **Hobby Only** | **Commercial sites prohibited** on Free; Pro ($20/mo) charges $0.15/GB over 1 TB | [Vercel Limits →](https://vercel.com/pricing) |
@@ -151,7 +151,7 @@ For serving public JavaScript libraries, CSS frameworks, fonts, and GitHub relea
 | [**jsDelivr**](https://www.jsdelivr.com/) | **Multi-CDN** (Cloudflare + Fastly + Bunny + Gcore) | npm, GitHub, WordPress.org | Automatic Multi-CDN failover, ESM bundling, on-the-fly minification | Public OSS packages only; 50 MB max file size | [jsdelivr.com →](https://www.jsdelivr.com/) |
 | [**cdnjs**](https://cdnjs.com/) | Cloudflare (330+ Cities) | 4,500+ curated GitHub libs | SRI hash generation, HTTP/3, Brotli compression | Curated library list only (must be accepted in repo) | [cdnjs.com →](https://cdnjs.com/) |
 | [**UNPKG**](https://unpkg.com/) | Cloudflare + Fly.io | Any npm package | Instant mirror of every file published on npm | Single-CDN architecture; npm packages only | [unpkg.com →](https://unpkg.com/) |
-| [**esm.sh**](https://esm.sh/) | Cloudflare Workers Edge | npm & JSR | CommonJS-to-ESM transform, TypeScript types, Import Maps | Built for ES module `import` rather than UMD globals | [esm.sh →](https://esm.sh/) |
+| [**esm.sh**](https://esm.sh/) | Cloudflare Workers Edge | npm & JSR | CommonJS-to-ESM transform, TypeScript types, Import Maps | Built for ES module `import` instead of UMD globals | [esm.sh →](https://esm.sh/) |
 | [**Statically.io**](https://statically.io/) | Multi-CDN (CF + Bunny + Fastly) | GitHub, GitLab, Bitbucket | Modern RawGit replacement + on-the-fly WebP image proxy | Public Git repositories and open-source assets only | [statically.io →](https://statically.io/) |
 | [**Google Hosted Libraries**](https://developers.google.com/speed/libraries) | Google Edge (200+ PoPs) | ~20 core JS libraries | Ultra-high uptime for jQuery, D3.js, Three.js | Very small library catalog; blocked in Mainland China | [developers.google.com →](https://developers.google.com/speed/libraries) |
 
@@ -205,24 +205,24 @@ python3 cdn_calculator.py --volume-tb 100 --json
 
 ---
 
-## 📚 Deep-Dive CDN Guides & Interactive Web Calculator
+## 📚 CDN Guides & Interactive Web Calculator
 
-- 🌐 [**Interactive Web CDN Cost Calculator (46 Providers)**](https://network-infrastructure.github.io/cdn-providers/) — Calculate 1 TB–500 TB monthly bills live in your browser with CSV export.
-- ⚔️ [**Cloudflare vs Bunny.net (2026 Comparison)**](guides/cloudflare-vs-bunny-cdn.md) ([Web](https://network-infrastructure.github.io/cdn-providers/cloudflare-vs-bunny-cdn.html)) — Video ToS, R2 vs Bunny Storage & hybrid stack.
-- ⚔️ [**AWS CloudFront vs Cloudflare vs Fastly**](https://network-infrastructure.github.io/cdn-providers/cloudfront-vs-cloudflare-vs-fastly.html) — 1 TB–100 TB costs, request fees & 150ms purge speed.
-- 🆓 [**Free CDN Providers & Hidden Restrictions Guide**](guides/free-cdn-providers-and-limits.md) ([Web](https://network-infrastructure.github.io/cdn-providers/free-cdn-providers.html)) — Cloudflare ToS, AWS 1 TB caps & Netlify overage traps.
-- 💰 [**CDN Bandwidth Cost Comparison: 1 TB vs 10 TB vs 100 TB**](guides/cdn-bandwidth-cost-calculator-1tb-to-500tb.md) ([Web](https://network-infrastructure.github.io/cdn-providers/cdn-pricing-calculator.html)) — Real-world FinOps math.
-- 🗄️ [**Zero-Egress S3 Storage + CDN Stacks**](https://network-infrastructure.github.io/cdn-providers/zero-egress-s3-cdn.html) — Cloudflare R2, Backblaze B2, Hetzner S3 & Oracle OCI.
-- 🎬 [**Best Video Streaming & Image Optimization CDNs**](guides/video-and-image-cdn-comparison.md) ([Web](https://network-infrastructure.github.io/cdn-providers/video-image-cdn.html)) — Bunny Stream, Cloudflare Stream, Mux & ImageKit.
-- 📦 [**Free Open-Source JS, CSS & npm CDNs**](https://network-infrastructure.github.io/cdn-providers/open-source-js-npm-cdn.html) — jsDelivr vs cdnjs vs UNPKG vs esm.sh.
-- 🌏 [**China & APAC CDN Providers**](https://network-infrastructure.github.io/cdn-providers/china-and-apac-cdn-providers.html) — Alibaba Cloud, Tencent EdgeOne & Near-China PoPs.
-- 🪦 [**Legacy CDN Migration Guide (MaxCDN, StackPath, Edgio)**](guides/legacy-cdn-migration-guide-maxcdn-edgio-stackpath.md) ([Web](https://network-infrastructure.github.io/cdn-providers/legacy-cdn-alternatives.html)) — Step-by-step migration checklist.
-- 📰 [**Best WordPress CDN Providers (2026)**](https://network-infrastructure.github.io/cdn-providers/wordpress-cdn-providers.html) — Cloudflare APO, QUIC.cloud, Bunny.net & Jetpack.
-- 🎮 [**Gaming & Large File Download CDNs**](https://network-infrastructure.github.io/cdn-providers/gaming-and-large-file-cdn.html) — Bunny Volume, Cloudflare R2, Gcore & CacheFly.
-- 🛡️ [**CDN Providers with WAF & DDoS Protection**](https://network-infrastructure.github.io/cdn-providers/cdn-with-waf-and-ddos-protection.html) — Cloudflare, Gcore, Imperva, Akamai & Sucuri.
-- 🇪🇺 [**European & GDPR-Compliant CDN Providers**](https://network-infrastructure.github.io/cdn-providers/european-gdpr-cdn-providers.html) — Bunny.net, OVHcloud, Scaleway, Hetzner & KeyCDN.
-- 🔀 [**Multi-CDN Providers & Routing**](https://network-infrastructure.github.io/cdn-providers/multi-cdn-providers-and-routing.html) — jsDelivr, Mux, Cloudinary & DNS failover.
-- 🏢 [**Akamai vs Cloudflare vs Fastly (Enterprise)**](https://network-infrastructure.github.io/cdn-providers/akamai-vs-cloudflare-vs-fastly.html) — ISP-embedded PoPs & edge compute.
+- 🌐 [**Interactive Web CDN Cost Calculator (46 Providers)**](https://network-infrastructure.github.io/cdn-providers/): Calculate 1 TB to 500 TB monthly bills live in your browser with CSV export.
+- ⚔️ [**Cloudflare vs Bunny.net (2026 Comparison)**](guides/cloudflare-vs-bunny-cdn.md) ([Web](https://network-infrastructure.github.io/cdn-providers/cloudflare-vs-bunny-cdn.html)): Video ToS, R2 vs Bunny Storage & hybrid stack.
+- ⚔️ [**AWS CloudFront vs Cloudflare vs Fastly**](https://network-infrastructure.github.io/cdn-providers/cloudfront-vs-cloudflare-vs-fastly.html): 1 TB to 100 TB costs, request fees & 150ms purge speed.
+- 🆓 [**Free CDN Providers & Hidden Restrictions Guide**](guides/free-cdn-providers-and-limits.md) ([Web](https://network-infrastructure.github.io/cdn-providers/free-cdn-providers.html)): Cloudflare ToS, AWS 1 TB caps & Netlify overage traps.
+- 💰 [**CDN Bandwidth Cost Comparison: 1 TB vs 10 TB vs 100 TB**](guides/cdn-bandwidth-cost-calculator-1tb-to-500tb.md) ([Web](https://network-infrastructure.github.io/cdn-providers/cdn-pricing-calculator.html)): Real-world FinOps math.
+- 🗄️ [**Zero-Egress S3 Storage + CDN Stacks**](https://network-infrastructure.github.io/cdn-providers/zero-egress-s3-cdn.html): Cloudflare R2, Backblaze B2, Hetzner S3 & Oracle OCI.
+- 🎬 [**Best Video Streaming & Image Optimization CDNs**](guides/video-and-image-cdn-comparison.md) ([Web](https://network-infrastructure.github.io/cdn-providers/video-image-cdn.html)): Bunny Stream, Cloudflare Stream, Mux & ImageKit.
+- 📦 [**Free Open-Source JS, CSS & npm CDNs**](https://network-infrastructure.github.io/cdn-providers/open-source-js-npm-cdn.html): jsDelivr vs cdnjs vs UNPKG vs esm.sh.
+- 🌏 [**China & APAC CDN Providers**](https://network-infrastructure.github.io/cdn-providers/china-and-apac-cdn-providers.html): Alibaba Cloud, Tencent EdgeOne & Near-China PoPs.
+- 🪦 [**Legacy CDN Migration Guide (MaxCDN, StackPath, Edgio)**](guides/legacy-cdn-migration-guide-maxcdn-edgio-stackpath.md) ([Web](https://network-infrastructure.github.io/cdn-providers/legacy-cdn-alternatives.html)): Step-by-step migration checklist.
+- 📰 [**Best WordPress CDN Providers (2026)**](https://network-infrastructure.github.io/cdn-providers/wordpress-cdn-providers.html): Cloudflare APO, QUIC.cloud, Bunny.net & Jetpack.
+- 🎮 [**Gaming & Large File Download CDNs**](https://network-infrastructure.github.io/cdn-providers/gaming-and-large-file-cdn.html): Bunny Volume, Cloudflare R2, Gcore & CacheFly.
+- 🛡️ [**CDN Providers with WAF & DDoS Protection**](https://network-infrastructure.github.io/cdn-providers/cdn-with-waf-and-ddos-protection.html): Cloudflare, Gcore, Imperva, Akamai & Sucuri.
+- 🇪🇺 [**European & GDPR-Compliant CDN Providers**](https://network-infrastructure.github.io/cdn-providers/european-gdpr-cdn-providers.html): Bunny.net, OVHcloud, Scaleway, Hetzner & KeyCDN.
+- 🔀 [**Multi-CDN Providers & Routing**](https://network-infrastructure.github.io/cdn-providers/multi-cdn-providers-and-routing.html): jsDelivr, Mux, Cloudinary & DNS failover.
+- 🏢 [**Akamai vs Cloudflare vs Fastly (Enterprise)**](https://network-infrastructure.github.io/cdn-providers/akamai-vs-cloudflare-vs-fastly.html): ISP-embedded PoPs & edge compute.
 
 ---
 
@@ -251,7 +251,7 @@ Every tariff in [`providers.json`](providers.json) is checked against official v
 
 ## ⭐ Support the Project
 
-**Saved money on your CDN bill or migrated off a legacy provider?** Please **give this repository a Star ⭐** in the top-right corner — it helps other developers avoid surprise bandwidth bills!
+**Saved money on your CDN bill or migrated off a legacy provider?** Please **give this repository a Star ⭐** in the top-right corner so other developers can avoid surprise bandwidth bills.
 
 ## 📄 License
 
